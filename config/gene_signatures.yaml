@@ -1,0 +1,74 @@
+# Developmental program gene signatures curated by Academician Toncheva.
+# Used for ssGSEA enrichment to assign RDP-Class.
+# These are core representative genes -- full signatures to be provided separately.
+
+RDP-I:
+  name: Pluripotency / Stemness
+  genes:
+    - SOX2
+    - NANOG
+    - POU5F1
+    - KLF4
+    - MYC
+    - LIN28A
+    - SALL4
+    - DPPA4
+    - ZFP42
+    - TDGF1
+
+RDP-II:
+  name: Neural Crest
+  genes:
+    - SOX10
+    - FOXD3
+    - PAX3
+    - MITF
+    - TFAP2A
+    - SNAI2
+    - SOX9
+    - EDNRB
+    - NES
+    - NGFR
+
+RDP-III:
+  name: EMT (Epithelial-Mesenchymal Transition)
+  genes:
+    - TWIST1
+    - SNAI1
+    - SNAI2
+    - ZEB1
+    - ZEB2
+    - VIM
+    - CDH2
+    - FN1
+    - MMP2
+    - MMP9
+    - FOXC2
+
+RDP-IV:
+  name: Morphogenic
+  genes:
+    - SHH
+    - WNT5A
+    - BMP4
+    - FGF8
+    - NOTCH1
+    - JAG1
+    - DLL1
+    - GLI1
+    - PTCH1
+    - SMO
+
+RDP-V:
+  name: Lineage Commitment
+  genes:
+    - GATA1
+    - TAL1
+    - CEBPA
+    - SPI1
+    - RUNX1
+    - PAX5
+    - EBF1
+    - IKZF1
+    - MPO
+    - GYPA

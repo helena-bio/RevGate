@@ -1,0 +1,11 @@
+# Development environment overrides.
+# Reduces cancer types and patients for faster iteration.
+
+pipeline:
+  cancer_types: [LAML, SKCM]
+  top_n_genes: 20
+
+survival:
+  min_patients: 5
+
+output_dir: results/dev/

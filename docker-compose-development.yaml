@@ -1,0 +1,35 @@
+# RevGate development compose file.
+# Cache and results are mounted as volumes -- data never baked into image.
+
+networks:
+  revgate-dev-network:
+    external: true
+
+volumes:
+  revgate-cache:
+    driver: local
+  revgate-results:
+    driver: local
+
+services:
+  revgate:
+    image: revgate:development
+    container_name: revgate-dev
+    networks:
+      - revgate-dev-network
+    volumes:
+      # Persistent data cache -- shared between runs
+      - revgate-cache:/data/cache
+      # Results output
+      - revgate-results:/data/results
+      # Live code reload in development
+      - ./src:/app/src:ro
+      - ./config:/app/config:ro
+      - ./main.py:/app/main.py:ro
+    environment:
+      - REVGATE_CACHE_DIR=/data/cache
+      - REVGATE_OUTPUT_DIR=/data/results
+      - PYTHONUNBUFFERED=1
+    # Keep container running for exec commands
+    entrypoint: ["tail", "-f", "/dev/null"]
+    restart: unless-stopped

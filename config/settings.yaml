@@ -1,0 +1,25 @@
+pipeline:
+  cancer_types: [LAML, SKCM, BRCA, KIRC, PAAD, LUAD]
+  top_n_genes: 20
+  depmap_threshold: -0.5
+
+network:
+  string_min_score: 700
+  pagerank_damping: 0.85
+
+classification:
+  nv_threshold_a: 0.15
+  nv_threshold_c: 0.05
+  fdr_threshold: 0.05
+
+survival:
+  min_patients: 20
+  alpha: 0.05
+
+sensitivity:
+  top_n_range: [10, 15, 20, 30, 50]
+  string_thresholds: [500, 700, 900]
+  damping_range: [0.70, 0.80, 0.85, 0.90]
+
+cache_dir: ~/.revgate/cache
+output_dir: results/
