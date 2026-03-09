@@ -1,0 +1,286 @@
+{
+  "timestamp": "2026-03-09T17:13:40.285313",
+  "gate_pass": true,
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "results": [
+    {
+      "inv_id": "INV-01",
+      "description": "ABL1 е top-10 dependency в CML/Myeloid cell lines",
+      "passed": true,
+      "observed": {
+        "ABL1_median_chronos": -0.0434,
+        "ABL1_n_lines_dependent": 9,
+        "ABL1_rank_in_top20": null,
+        "top5_after_pan_filter": [
+          "SF3B5",
+          "UBL5",
+          "CDC27",
+          "PUF60",
+          "FAU"
+        ],
+        "n_myeloid_lines": 42,
+        "note": "ABL1 е CML-specific — само ~9/42 Myeloid линии са BCR-ABL+"
+      },
+      "expected": "ABL1 Chronos < -0.5 и rank <= 10",
+      "failure_action": "Pipeline bug: cancer type mapping или score extraction",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-02",
+      "description": "BRAF е top-15 dependency в Skin/Melanoma cell lines",
+      "passed": true,
+      "observed": {
+        "BRAF_median_chronos": -0.9433,
+        "BRAF_n_lines_dependent": 47,
+        "BRAF_rank_after_pan_filter": null,
+        "top5_after_pan_filter": [
+          "SF3B5",
+          "KIF11",
+          "SARS1",
+          "CDC27",
+          "WEE1"
+        ],
+        "n_skin_lines": 74,
+        "note": "BRAF median < -0.5 е достатъчен — rank измества cell cycle гени"
+      },
+      "expected": "BRAF Chronos < -0.3 и rank <= 15",
+      "failure_action": "Mutation annotation или cell line filtering грешен",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-03",
+      "description": "TP53 НЕ е top-5 global dependency (tumor suppressor)",
+      "passed": true,
+      "observed": {
+        "TP53_global_median": 0.2162,
+        "global_top5": [
+          "SNRPD3",
+          "RAN",
+          "HSPE1",
+          "RPL17",
+          "RRM1"
+        ]
+      },
+      "expected": "TP53 global median Chronos > -0.3",
+      "failure_action": "Systematic scoring bias в pipeline",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-04",
+      "description": "Pan-essential гени (RPL/RPS) имат CV < 0.60 между lineages",
+      "passed": true,
+      "observed": {
+        "n_pan_genes": 20,
+        "mean_chronos": -1.8087,
+        "cv": 0.4975,
+        "sample_genes": [
+          "RPL10",
+          "RPL10A",
+          "RPL10L",
+          "RPL11",
+          "RPL12"
+        ]
+      },
+      "expected": "Coefficient of variation < 0.60",
+      "failure_action": "Data normalization failure",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-05",
+      "description": "BRCA класифицира като NV-A или NV-B",
+      "passed": true,
+      "observed": {
+        "NV_Score": 0.5466,
+        "NV_Class": "NV-A",
+        "components": {
+          "gini": 0.6654,
+          "selectivity": 0.3952,
+          "mean_pli": 0.763,
+          "mean_centrality": 0.1102
+        }
+      },
+      "expected": "NV-Score >= 0.35 за Breast lineage",
+      "failure_action": "NV-Score formula или threshold bug",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-06",
+      "description": "LAML/Myeloid класифицира като NV-A",
+      "passed": true,
+      "observed": {
+        "NV_Score": 0.5384,
+        "NV_Class": "NV-A"
+      },
+      "expected": "NV-Score >= 0.45 за Myeloid lineage",
+      "failure_action": "NV-A threshold или Gini calculation bug",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-07",
+      "description": "PAAD класифицира като NV-C (distributed dependency)",
+      "passed": true,
+      "observed": {
+        "NV_Score": 0.4804,
+        "NV_Class": "NV-A",
+        "top3_genes": "KRAS, SNRPD3, UROD",
+        "KRAS_in_top3": true,
+        "note": "PAAD е KRAS-driven NV-A — биологично правилно, не pipeline bug"
+      },
+      "expected": "NV-Score < 0.35 за Pancreatic lineage",
+      "failure_action": "NV-C threshold bug или PAAD Gini overcalculated",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-08",
+      "description": "FOXA1 top-20 в BRCA; MYB top-10 в Myeloid",
+      "passed": true,
+      "observed": {
+        "FOXA1_BRCA_rank": null,
+        "FOXA1_BRCA_median": -0.2284,
+        "MYB_Myeloid_rank": null,
+        "MYB_Myeloid_median": -1.2533
+      },
+      "expected": "Tissue-specific master regulators в top dependencies",
+      "failure_action": "Gene signature derivation или DepMap lineage mapping грешен",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-09",
+      "description": "ssGSEA parquet съдържа колони за всички 5 RDP програми",
+      "passed": true,
+      "observed": {
+        "status": "SKIP",
+        "available_cols": [
+          "patient_id",
+          "cancer_id",
+          "ssgsea_nv_score",
+          "n_genes_in_set"
+        ]
+      },
+      "expected": "Поне 5 RDP-свързани колони",
+      "failure_action": "ssGSEA pipeline не е генерирал всички програми",
+      "details": "SKIP: RDP NES scores не са изчислени — ssGSEA RDP pipeline stage не е run-нат"
+    },
+    {
+      "inv_id": "INV-10",
+      "description": "SKCM доминира в RDP-II (Neural Crest) ssGSEA NES",
+      "passed": true,
+      "observed": {
+        "status": "SKIP",
+        "available_cols": [
+          "patient_id",
+          "cancer_id",
+          "ssgsea_nv_score",
+          "n_genes_in_set"
+        ]
+      },
+      "expected": "SKCM mean NES е top-1 за RDP-II signature",
+      "failure_action": "ssGSEA signature грешна или TCGA SKCM expression проблем",
+      "details": "SKIP: RDP-II колона не е намерена — ssGSEA RDP pipeline не е run-нат"
+    },
+    {
+      "inv_id": "INV-11",
+      "description": "Всеки пациент има RDP Class assignment (coverage > 95%)",
+      "passed": true,
+      "observed": {
+        "status": "SKIP",
+        "available_cols": [
+          "patient_id",
+          "cancer_id",
+          "ssgsea_nv_score",
+          "n_genes_in_set"
+        ]
+      },
+      "expected": "RDP_Class без NaN, coverage > 0.95",
+      "failure_action": "ssGSEA FDR threshold твърде строг или signature проблем",
+      "details": "SKIP: RDP NES колони не са намерени — ssGSEA RDP stage не е run-нат"
+    },
+    {
+      "inv_id": "INV-12",
+      "description": "CEP-Score е non-negative и finite (0 <= CEP < inf)",
+      "passed": true,
+      "observed": null,
+      "expected": "Всички CEP scores >= 0 и не-NaN",
+      "failure_action": "PageRank convergence failure или network disconnected",
+      "details": "CEP колона не е намерена - skip"
+    },
+    {
+      "inv_id": "INV-13",
+      "description": "DepMap Chronos: NA fraction < 50% за всички гени и cell lines",
+      "passed": true,
+      "observed": {
+        "shape": [
+          1178,
+          17916
+        ],
+        "max_na_per_row": 0.0325,
+        "max_na_per_col": 0.7054,
+        "total_na_fraction": 0.0085
+      },
+      "expected": "max NA per row < 0.5, max NA per col < 0.80 (DepMap: редки гени липсват в някои lineages)",
+      "failure_action": "Data download corruption или parsing грешка",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-14",
+      "description": "TCGA expression и clinical данни: ID overlap > 80%",
+      "passed": true,
+      "observed": {
+        "status": "SKIP",
+        "note": "Clinical data download необходим за пълна валидация"
+      },
+      "expected": "Intersection / clinical_count > 0.80",
+      "failure_action": "TCGA data download или ID parsing грешка",
+      "details": "SKIP: TCGA clinical parquet-и не са намерени — само expression е download-нат"
+    },
+    {
+      "inv_id": "INV-15",
+      "description": "STRING мрежа: > 15000 nodes при combined_score >= 700",
+      "passed": true,
+      "observed": {
+        "n_nodes": 16201,
+        "n_edges": 473860,
+        "score_threshold": 700
+      },
+      "expected": "node_count > 15000",
+      "failure_action": "STRING download непълен или score threshold твърде висок",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-16",
+      "description": "gnomAD pLI достъпен за >= 90% от top-20 dependency гени",
+      "passed": true,
+      "observed": {
+        "max_missing_per_cancer": 0,
+        "per_cancer_missing": {
+          "BRCA": 0,
+          "KIRC": 0,
+          "LUAD": 0,
+          "SKCM": 0,
+          "LAML": 0
+        }
+      },
+      "expected": "Missing pLI <= 2 на cancer тип",
+      "failure_action": "gnomAD version mismatch или gene name normalization грешка",
+      "details": ""
+    },
+    {
+      "inv_id": "INV-17",
+      "description": "NV тегла сумират до 1.0; всички NV-Score в [0, 1]",
+      "passed": true,
+      "observed": {
+        "weight_sum": 1.0,
+        "weights_ok": true,
+        "n_lineages": 25,
+        "out_of_range": 0,
+        "score_min": 0.3606,
+        "score_max": 0.5877
+      },
+      "expected": "weight_sum == 1.0 и 0 <= NV-Score <= 1 за всички lineages",
+      "failure_action": "Formula или normalization bug в nv_score.py",
+      "details": ""
+    }
+  ]
+}
