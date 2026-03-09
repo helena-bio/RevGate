@@ -1,0 +1,63 @@
+17:45:15 [INFO] Зареждане на клинични данни...
+17:45:15 [INFO] Зареждане на ssGSEA данни...
+17:45:15 [INFO]   Финална cohort: 1346 пациента
+17:45:15 [INFO]   Events: 283
+17:45:15 [INFO]   Early (I-II):    1023
+17:45:15 [INFO]   Advanced (III-IV): 323
+17:45:15 [INFO]   ssGSEA range: [3.529 – 4.529]
+17:45:15 [INFO] Model 1: Total effect ssGSEA -> OS...
+17:45:15 [INFO]   HR=0.9164 [0.8340–1.0070] p=0.0695
+17:45:15 [INFO] Model 2: ssGSEA -> Stage (logistic)...
+17:45:15 [INFO]   OR=1.1812  LR p=0.0187
+17:45:15 [INFO]   Point-biserial r=0.0643  p=0.0183
+17:45:15 [INFO] Model 3: Direct effect ssGSEA -> OS | stage...
+17:45:15 [INFO]   HR=0.9042 [0.8229–0.9935] p=0.0361
+17:45:15 [INFO] Model 4: Moderation — ssGSEA × stage interaction...
+17:45:15 [INFO]   Interaction HR=1.0447 [0.8481–1.2868] p=0.6810
+17:45:15 [INFO]   Moderation: NO — stage не модерира
+17:45:15 [INFO] Bootstrap mediation (n=1000)...
+17:45:31 [INFO]   200/1000...
+17:45:48 [INFO]   400/1000...
+17:46:05 [INFO]   600/1000...
+17:46:22 [INFO]   800/1000...
+17:46:38 [INFO]   1000/1000...
+17:46:38 [INFO]   Indirect effect: 0.0134 [0.0028 – 0.0258]
+17:46:38 [INFO]   Mediation: SIGNIFICANT
+17:46:38 [INFO] Stage-stratified log-rank верификация...
+17:46:38 [INFO]   Early (I-II): n=1023, log-rank p=0.3227
+17:46:38 [INFO]   Advanced (III-IV): n=323, log-rank p=0.2648
+17:46:39 [INFO] Фигура: results/mediation_brca_summary.png
+17:46:39 [INFO] JSON: results/mediation_brca_results.json
+17:46:39 [INFO] Mediation analysis завършен.
+
+[1m====================================================================[0m
+[1m  RevGate BRCA — Mediation Analysis Summary[0m
+====================================================================
+
+[1mModel 1 — Total effect (ssGSEA -> OS):[0m
+  HR=0.9164 [0.8340–1.0070]  [93mp=0.0695[0m  n=1346
+
+[1mModel 2 — ssGSEA предсказва Stage (logistic):[0m
+  OR=1.1812  r=0.0643  [92mp=0.0187 ✓[0m
+
+[1mModel 3 — Direct effect (ssGSEA -> OS | stage):[0m
+  HR=0.9042 [0.8229–0.9935]  [92mp=0.0361 ✓[0m  n=1346
+
+[1mModel 4 — Moderation (ssGSEA × Stage):[0m
+  Interaction HR=1.0447  p=0.6810  [93mNOT SIGNIFICANT[0m
+
+[1mBootstrap Mediation (Preacher & Hayes):[0m
+  Indirect effect: β=0.0134
+  95% CI: [0.0028 – 0.0258]
+  [92m✓ SIGNIFICANT[0m
+
+[1mEffect Decomposition:[0m
+  Total:    β=-0.0873
+  Direct:   β=-0.1007
+  Indirect: β=0.0134
+  % Mediated: -15.3%
+
+[1mЗаключение:[0m
+  Stage медиира ефекта на ssGSEA върху OS
+====================================================================
+
