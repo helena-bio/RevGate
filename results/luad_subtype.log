@@ -1,0 +1,62 @@
+18:12:31 [INFO] Зареждане на LUAD данни...
+18:12:31 [INFO]   Total: n=641, events=275
+18:12:31 [INFO]   EGFR-mut: 51, KRAS-mut: 94, WT: 0
+18:12:31 [INFO]   Expr subtypes: {'Squamoid': 133, 'Bronchioid': 129, 'Magnoid': 90}
+18:12:31 [INFO]   Never smoker: 92, Ever: 517
+18:12:31 [INFO] Overall Cox (репликация на Finding_01)...
+18:12:31 [INFO]   All stages: HR=1.1784 p=0.0023 n=633 ✓
+18:12:31 [INFO]   Early (I-II): HR=1.2326 p=0.0022 n=479 ✓
+18:12:31 [INFO] Mutation-stratified Cox (EGFR / KRAS / WT)...
+18:12:31 [INFO]   EGFR-mutant    : HR=1.4409 p=0.0165 n=49 ✓ ↑ harmful
+18:12:31 [INFO]   KRAS-mutant    : HR=1.0994 p=0.5581 n=93 ○ ↑ harmful
+18:12:31 [INFO]   WT/Other: insufficient data
+18:12:31 [INFO] Expression subtype Cox (Bronchioid/Squamoid/Magnoid)...
+18:12:31 [INFO]   Bronchioid  : HR=1.3523 p=0.0232 n=126 ✓ ↑ harmful
+18:12:31 [INFO]   Squamoid    : HR=1.0127 p=0.9069 n=132 ○ ↑ harmful
+18:12:31 [INFO]   Magnoid     : HR=1.0314 p=0.8188 n=88 ○ ↑ harmful
+18:12:31 [INFO] Smoking-stratified Cox...
+18:12:31 [INFO]   Never smoker   : HR=1.2891 p=0.0827 n=90 ○ ↑ harmful
+18:12:31 [INFO]   Ever smoker    : HR=1.1925 p=0.0045 n=511 ✓ ↑ harmful
+18:12:31 [INFO] Stage-stratified Cox...
+18:12:31 [INFO]   Early (I-II): HR=1.2326 p=0.0022 n=479 ✓ ↑ harmful
+18:12:31 [INFO]   Advanced (III-IV): HR=1.0430 p=0.6396 n=142 ○ ↑ harmful
+18:12:31 [INFO] Score distribution per subtype...
+18:12:31 [INFO]   EGFR-mutant: mean=3.666 std=0.140 CV=0.038
+18:12:31 [INFO]   KRAS-mutant: mean=3.738 std=0.144 CV=0.038
+18:12:31 [INFO]   Bronchioid: mean=3.656 CV=0.032
+18:12:31 [INFO]   Squamoid: mean=3.755 CV=0.043
+18:12:31 [INFO]   Magnoid: mean=3.783 CV=0.038
+18:12:32 [INFO] Фигура: results/luad_subtype_analysis.png
+18:12:32 [INFO] JSON: results/luad_subtype_results.json
+18:12:32 [INFO] LUAD subtype analysis завършен.
+
+[1m====================================================================[0m
+[1m  RevGate LUAD Subtype Analysis — Декомпозиция на HR=1.289[0m
+====================================================================
+
+[1mOverall (Finding_01 репликация):[0m
+  Early (I-II)        : [91mHR=1.2326[0m [1.078–1.409] p=0.0022 [92m✓[0m ↑ harmful n=479
+  All stages          : [91mHR=1.1784[0m [1.060–1.310] p=0.0023 [92m✓[0m ↑ harmful n=633
+
+[1mMutation-stratified:[0m
+  EGFR-mutant         : [91mHR=1.4409[0m [1.069–1.942] p=0.0165 [92m✓[0m ↑ harmful n=49
+  KRAS-mutant         : [91mHR=1.0994[0m [0.801–1.510] p=0.5581 ○ ↑ harmful n=93
+
+[1mExpression subtype:[0m
+  Bronchioid          : [91mHR=1.3523[0m [1.042–1.755] p=0.0232 [92m✓[0m ↑ harmful n=126
+  Squamoid            : [91mHR=1.0127[0m [0.820–1.251] p=0.9069 ○ ↑ harmful n=132
+  Magnoid             : [91mHR=1.0314[0m [0.791–1.344] p=0.8188 ○ ↑ harmful n=88
+
+[1mSmoking-stratified:[0m
+  Never smoker        : [91mHR=1.2891[0m [0.968–1.717] p=0.0827 ○ ↑ harmful n=90
+  Ever smoker         : [91mHR=1.1925[0m [1.056–1.347] p=0.0045 [92m✓[0m ↑ harmful n=511
+
+[1mStage-stratified:[0m
+  Early (I-II)        : [91mHR=1.2326[0m [1.078–1.409] p=0.0022 [92m✓[0m ↑ harmful n=479
+  Advanced (III-IV)   : [91mHR=1.0430[0m [0.875–1.244] p=0.6396 ○ ↑ harmful n=142
+
+[1mКлючов въпрос — обяснява ли се HR=1.289?[0m
+  [91mНЕ — нито EGFR subtype показва HR<1[0m
+  Необходимо е алтернативно обяснение
+====================================================================
+

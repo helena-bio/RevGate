@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-03-09T18:12:32.663705",
+  "cancer": "LUAD",
+  "finding01_reference": {
+    "early_hr": 1.289,
+    "early_p": 0.0008
+  },
+  "overall_cox": {
+    "all": {
+      "hr": 1.1784,
+      "ci_low": 1.0602,
+      "ci_high": 1.3097,
+      "p": 0.0023,
+      "coef": 0.1642,
+      "n": 633,
+      "events": 272
+    },
+    "early": {
+      "hr": 1.2326,
+      "ci_low": 1.0783,
+      "ci_high": 1.409,
+      "p": 0.0022,
+      "coef": 0.2091,
+      "n": 479,
+      "events": 175
+    }
+  },
+  "mutation_stratified": {
+    "EGFR-mutant": {
+      "hr": 1.4409,
+      "ci_low": 1.0688,
+      "ci_high": 1.9424,
+      "p": 0.0165,
+      "coef": 0.3652,
+      "n": 49,
+      "events": 28
+    },
+    "KRAS-mutant": {
+      "hr": 1.0994,
+      "ci_low": 0.8006,
+      "ci_high": 1.5098,
+      "p": 0.5581,
+      "coef": 0.0948,
+      "n": 93,
+      "events": 33
+    }
+  },
+  "expression_subtype": {
+    "Bronchioid": {
+      "hr": 1.3523,
+      "ci_low": 1.0421,
+      "ci_high": 1.7548,
+      "p": 0.0232,
+      "coef": 0.3018,
+      "n": 126,
+      "events": 43
+    },
+    "Squamoid": {
+      "hr": 1.0127,
+      "ci_low": 0.8197,
+      "ci_high": 1.2511,
+      "p": 0.9069,
+      "coef": 0.0126,
+      "n": 132,
+      "events": 69
+    },
+    "Magnoid": {
+      "hr": 1.0314,
+      "ci_low": 0.7915,
+      "ci_high": 1.3442,
+      "p": 0.8188,
+      "coef": 0.031,
+      "n": 88,
+      "events": 53
+    }
+  },
+  "smoking_stratified": {
+    "Never smoker": {
+      "hr": 1.2891,
+      "ci_low": 0.9677,
+      "ci_high": 1.7173,
+      "p": 0.0827,
+      "coef": 0.2539,
+      "n": 90,
+      "events": 38
+    },
+    "Ever smoker": {
+      "hr": 1.1925,
+      "ci_low": 1.0561,
+      "ci_high": 1.3466,
+      "p": 0.0045,
+      "coef": 0.1761,
+      "n": 511,
+      "events": 206
+    }
+  },
+  "stage_stratified": {
+    "Early (I-II)": {
+      "hr": 1.2326,
+      "ci_low": 1.0783,
+      "ci_high": 1.409,
+      "p": 0.0022,
+      "coef": 0.2091,
+      "n": 479,
+      "events": 175
+    },
+    "Advanced (III-IV)": {
+      "hr": 1.043,
+      "ci_low": 0.8745,
+      "ci_high": 1.2439,
+      "p": 0.6396,
+      "coef": 0.0421,
+      "n": 142,
+      "events": 94
+    }
+  },
+  "score_distribution": {
+    "mut_EGFR-mutant": {
+      "mean": 3.6662,
+      "std": 0.1403,
+      "cv": 0.0383,
+      "n": 51
+    },
+    "mut_KRAS-mutant": {
+      "mean": 3.7379,
+      "std": 0.1437,
+      "cv": 0.0384,
+      "n": 94
+    },
+    "expr_Bronchioid": {
+      "mean": 3.6556,
+      "std": 0.1183,
+      "cv": 0.0324,
+      "n": 129
+    },
+    "expr_Squamoid": {
+      "mean": 3.7549,
+      "std": 0.16,
+      "cv": 0.0426,
+      "n": 133
+    },
+    "expr_Magnoid": {
+      "mean": 3.783,
+      "std": 0.144,
+      "cv": 0.0381,
+      "n": 90
+    }
+  }
+}
