@@ -1,0 +1,52 @@
+18:01:25 [INFO] Зареждане на данни...
+18:01:25 [INFO]   Cohort: n=1979, events=1143 (57.8%)
+18:01:25 [INFO]   ssGSEA range: [0.431 – 1.431]
+18:01:25 [INFO]   ER+: 1498, ER-: 439
+18:01:25 [INFO] Univariate Cox: ssGSEA -> OS...
+18:01:25 [INFO]   HR=0.9761 [0.9236–1.0317] p=0.3924
+18:01:25 [INFO] Multivariate Cox: ssGSEA + age + ER + subtype dummies...
+18:01:25 [INFO]   HR=1.0403 [0.9692–1.1165] p=0.2741
+18:01:25 [INFO] Subtype-stratified Cox...
+18:01:25 [INFO]   LumA           : HR=1.1187 p=0.0115 n=700 ✓
+18:01:25 [INFO]   LumB           : HR=0.9674 p=0.5195 n=475 ○
+18:01:26 [INFO]   Her2           : HR=1.1413 p=0.0768 n=224 ○
+18:01:26 [INFO]   Basal          : HR=0.9027 p=0.2229 n=209 ○
+18:01:26 [INFO]   claudin-low    : HR=1.1028 p=0.2977 n=217 ○
+18:01:26 [INFO] ER-stratified Cox...
+18:01:26 [INFO]   ER+: HR=1.0542 p=0.0865 n=1498 ○
+18:01:26 [INFO]   ER-: HR=1.0650 p=0.2815 n=439 ○
+18:01:26 [INFO] KM log-rank: p=0.2127 (High n=990, Low n=989)
+18:01:26 [INFO] Фигура: results/metabric_external_validation.png
+18:01:26 [INFO] JSON: results/metabric_external_validation_results.json
+18:01:26 [INFO] METABRIC external validation завършен.
+
+[1m====================================================================[0m
+[1m  RevGate METABRIC External Validation[0m
+====================================================================
+
+[1mUnivariate Cox (ssGSEA -> OS):[0m
+  HR=0.9761 [0.9236–1.0317]  [93mp=0.3924[0m  n=1979, events=1143
+
+[1mMultivariate Cox (ssGSEA + age + ER + subtype):[0m
+  HR=1.0403 [0.9692–1.1165]  [93mp=0.2741[0m  n=1931
+
+[1mSubtype-stratified Cox:[0m
+  LumA           : HR=1.1187 [1.0255–1.2204]  [92mp=0.0115 ✓[0m  n=700
+  LumB           : HR=0.9674 [0.8747–1.0700]  [93mp=0.5195[0m  n=475
+  Her2           : HR=1.1413 [0.9859–1.3213]  [93mp=0.0768[0m  n=224
+  Basal          : HR=0.9027 [0.7657–1.0642]  [93mp=0.2229[0m  n=209
+  claudin-low    : HR=1.1028 [0.9173–1.3257]  [93mp=0.2977[0m  n=217
+
+[1mER-stratified Cox:[0m
+  ER+: HR=1.0542 [0.9925–1.1197]  [93mp=0.0865[0m  n=1498
+  ER-: HR=1.0650 [0.9497–1.1942]  [93mp=0.2815[0m  n=439
+
+[1mKM Log-rank (High vs Low median split):[0m
+  p=0.2127  High n=990, Low n=989
+
+[1mReplication Assessment:[0m
+  TCGA BRCA Early (Finding_01): HR=0.813, p=0.0015
+  METABRIC univariate:          HR=0.9761, p=0.3924
+  Verdict: [93mPARTIAL — directional but not significant[0m
+====================================================================
+
