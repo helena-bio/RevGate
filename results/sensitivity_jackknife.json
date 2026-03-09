@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-03-09T17:29:08.022058",
+  "method": "Jackknife leave-one-out on tumor lineages",
+  "n_lineages": 20,
+  "stats": {
+    "gini": {
+      "observed": 0.2602,
+      "jk_estimate": 0.1278,
+      "jk_se": 3.4394,
+      "ci_95_low": -6.6133,
+      "ci_95_high": 6.869,
+      "cv": 26.9067,
+      "stable": false
+    },
+    "selectivity": {
+      "observed": 0.2011,
+      "jk_estimate": 0.3264,
+      "jk_se": 6.5597,
+      "ci_95_low": -12.5305,
+      "ci_95_high": 13.1833,
+      "cv": 20.0974,
+      "stable": false
+    },
+    "mean_pli": {
+      "observed": 0.3562,
+      "jk_estimate": 0.894,
+      "jk_se": 5.9078,
+      "ci_95_low": -10.6853,
+      "ci_95_high": 12.4734,
+      "cv": 6.6081,
+      "stable": false
+    },
+    "mean_centrality": {
+      "observed": 0.1825,
+      "jk_estimate": -0.3482,
+      "jk_se": 5.5903,
+      "ci_95_low": -11.3053,
+      "ci_95_high": 10.6088,
+      "cv": 999,
+      "stable": false
+    }
+  },
+  "influential_lineages": [
+    {
+      "lineage": "Myeloid",
+      "total_influence": 0.6279
+    },
+    {
+      "lineage": "Skin",
+      "total_influence": 0.4551
+    },
+    {
+      "lineage": "Soft Tissue",
+      "total_influence": 0.3903
+    },
+    {
+      "lineage": "Prostate",
+      "total_influence": 0.3801
+    },
+    {
+      "lineage": "Lymphoid",
+      "total_influence": 0.3053
+    }
+  ],
+  "all_stable": false
+}
