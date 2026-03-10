@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-03-10T12:06:37.909260",
+  "analysis": "METABRIC restricted follow-up validation",
+  "restricted_cox": [
+    {
+      "label": "36mo",
+      "n": 1979,
+      "events": 223,
+      "HR": 0.8098,
+      "HR_lower": 0.7401,
+      "HR_upper": 0.8861,
+      "p": 0.0,
+      "concordance": 0.5999
+    },
+    {
+      "label": "48mo",
+      "n": 1979,
+      "events": 337,
+      "HR": 0.8204,
+      "HR_lower": 0.7576,
+      "HR_upper": 0.8884,
+      "p": 0.0,
+      "concordance": 0.5821
+    },
+    {
+      "label": "60mo",
+      "n": 1979,
+      "events": 427,
+      "HR": 0.8511,
+      "HR_lower": 0.79,
+      "HR_upper": 0.9169,
+      "p": 0.0,
+      "concordance": 0.5663
+    },
+    {
+      "label": "84mo",
+      "n": 1979,
+      "events": 554,
+      "HR": 0.8723,
+      "HR_lower": 0.8147,
+      "HR_upper": 0.9341,
+      "p": 0.0001,
+      "concordance": 0.554
+    },
+    {
+      "label": "120mo",
+      "n": 1979,
+      "events": 760,
+      "HR": 0.9409,
+      "HR_lower": 0.8838,
+      "HR_upper": 1.0017,
+      "p": 0.0564,
+      "concordance": 0.5311
+    },
+    {
+      "label": "180mo",
+      "n": 1979,
+      "events": 965,
+      "HR": 1.0015,
+      "HR_lower": 0.9448,
+      "HR_upper": 1.0615,
+      "p": 0.9608,
+      "concordance": 0.483
+    },
+    {
+      "label": "240mo",
+      "n": 1979,
+      "events": 1098,
+      "HR": 1.0357,
+      "HR_lower": 0.9794,
+      "HR_upper": 1.0952,
+      "p": 0.2189,
+      "concordance": 0.4863
+    },
+    {
+      "label": "Full",
+      "n": 1979,
+      "events": 1143,
+      "HR": 1.0372,
+      "HR_lower": 0.982,
+      "HR_upper": 1.0955,
+      "p": 0.1906,
+      "concordance": 0.4865
+    }
+  ],
+  "tcga_reference": {
+    "hr": 0.803,
+    "p": 0.009,
+    "n": 816
+  }
+}
