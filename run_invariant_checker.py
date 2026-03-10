@@ -9,8 +9,8 @@ INV-05..08  Classification invariants (NV-Score)
 INV-09..12  RDP classification invariants (ssGSEA)
 INV-13..17  Data integrity invariants
 
-NV-Score = 0.26*Gini + 0.20*Selectivity + 0.36*mean_pLI + 0.18*mean_Centrality
-NV-A >= 0.45 | NV-B 0.35-0.45 | NV-C < 0.35
+NV-Score = 0.25*Gini + 0.25*Selectivity + 0.25*mean_pLI + 0.25*mean_Centrality (equal weights)
+NV-A >= 0.50 | NV-B 0.35-0.50 | NV-C < 0.35 (Finding_04 recalibrated)
 
 Употреба:
   cd ~/revgate

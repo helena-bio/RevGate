@@ -42,8 +42,8 @@ RESULTS_DIR     = REVGATE_ROOT / "results"
 CANCER_IDS = ["BRCA", "KIRC", "LUAD", "LAML", "SKCM", "PAAD"]
 
 # NV-Score прагове от handover
-NV_A_THRESHOLD = 0.53
-NV_C_THRESHOLD = 0.41
+NV_A_THRESHOLD = 0.50  # recalibrated with equal weights, Finding_04
+NV_C_THRESHOLD = 0.35  # recalibrated with equal weights, Finding_04
 
 
 def load_clinical(cancer_id: str) -> pd.DataFrame:

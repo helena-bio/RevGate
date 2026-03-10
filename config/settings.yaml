@@ -8,8 +8,8 @@ network:
   pagerank_damping: 0.85
 
 classification:
-  nv_threshold_a: 0.15
-  nv_threshold_c: 0.05
+  nv_threshold_a: 0.50  # recalibrated with equal weights, Finding_04
+  nv_threshold_c: 0.35  # recalibrated with equal weights, Finding_04
   fdr_threshold: 0.05
 
 survival:
