@@ -1,0 +1,4767 @@
+{
+  "timestamp": "2026-03-10T11:40:45.502768",
+  "version": "v2 — differential dependencies",
+  "method": "DAR = fraction of top-20 differential deps with pLI > 0.5",
+  "criteria": {
+    "pLI_threshold": 0.5,
+    "gene_selection": "diff_score = lineage_median - global_median, nsmallest(20)",
+    "classification_rule": "pLI > 0.5 = oncogene-driven, else housekeeping"
+  },
+  "results": [
+    {
+      "lineage": "Lung",
+      "n_cell_lines": 126,
+      "top_n": 20,
+      "n_oncogene_driven": 6,
+      "n_housekeeping": 14,
+      "dar": 0.3,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "TFRC",
+        "LCE1F",
+        "PGD",
+        "TRPM7",
+        "GMPS"
+      ],
+      "top3_oncogene": [
+        "TFRC",
+        "AURKA",
+        "UXS1"
+      ],
+      "top3_housekeeping": [
+        "LCE1F",
+        "PGD",
+        "TRPM7"
+      ]
+    },
+    {
+      "lineage": "Lymphoid",
+      "n_cell_lines": 93,
+      "top_n": 20,
+      "n_oncogene_driven": 7,
+      "n_housekeeping": 13,
+      "dar": 0.35,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "IRF4",
+        "NMNAT1",
+        "ATP1B3",
+        "CBFB",
+        "NAMPT"
+      ],
+      "top3_oncogene": [
+        "NAMPT",
+        "EBF1",
+        "EP300"
+      ],
+      "top3_housekeeping": [
+        "IRF4",
+        "NMNAT1",
+        "ATP1B3"
+      ]
+    },
+    {
+      "lineage": "Skin",
+      "n_cell_lines": 74,
+      "top_n": 20,
+      "n_oncogene_driven": 6,
+      "n_housekeeping": 14,
+      "dar": 0.3,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "SOX10",
+        "BRAF",
+        "MDM2",
+        "FERMT2",
+        "CCND1"
+      ],
+      "top3_oncogene": [
+        "FERMT2",
+        "INTS6",
+        "MAPK1"
+      ],
+      "top3_housekeeping": [
+        "SOX10",
+        "BRAF",
+        "MDM2"
+      ]
+    },
+    {
+      "lineage": "CNS/Brain",
+      "n_cell_lines": 90,
+      "top_n": 20,
+      "n_oncogene_driven": 6,
+      "n_housekeeping": 14,
+      "dar": 0.3,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "RPP25L",
+        "FERMT2",
+        "ITGAV",
+        "FAM50A",
+        "PRKAR1A"
+      ],
+      "top3_oncogene": [
+        "FERMT2",
+        "PRKAR1A",
+        "PTK2"
+      ],
+      "top3_housekeeping": [
+        "RPP25L",
+        "ITGAV",
+        "FAM50A"
+      ]
+    },
+    {
+      "lineage": "Esophagus/Stomach",
+      "n_cell_lines": 69,
+      "top_n": 20,
+      "n_oncogene_driven": 5,
+      "n_housekeeping": 15,
+      "dar": 0.25,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "SNAP23",
+        "CCND1",
+        "STX4",
+        "ATP1A1",
+        "KLF5"
+      ],
+      "top3_oncogene": [
+        "ATP1A1",
+        "KLF5",
+        "PAICS"
+      ],
+      "top3_housekeeping": [
+        "SNAP23",
+        "CCND1",
+        "STX4"
+      ]
+    },
+    {
+      "lineage": "Bowel",
+      "n_cell_lines": 63,
+      "top_n": 20,
+      "n_oncogene_driven": 8,
+      "n_housekeeping": 12,
+      "dar": 0.4,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "CTNNB1",
+        "BCL2L1",
+        "KRAS",
+        "TCF7L2",
+        "SNAP23"
+      ],
+      "top3_oncogene": [
+        "CTNNB1",
+        "KRAS",
+        "TCF7L2"
+      ],
+      "top3_housekeeping": [
+        "BCL2L1",
+        "SNAP23",
+        "SCAP"
+      ]
+    },
+    {
+      "lineage": "Breast",
+      "n_cell_lines": 53,
+      "top_n": 20,
+      "n_oncogene_driven": 7,
+      "n_housekeeping": 13,
+      "dar": 0.35,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "ADSL",
+        "ATP1A1",
+        "SDHB",
+        "KIF11",
+        "CCND1"
+      ],
+      "top3_oncogene": [
+        "ATP1A1",
+        "NAMPT",
+        "CLTC"
+      ],
+      "top3_housekeeping": [
+        "ADSL",
+        "SDHB",
+        "KIF11"
+      ]
+    },
+    {
+      "lineage": "Head and Neck",
+      "n_cell_lines": 77,
+      "top_n": 20,
+      "n_oncogene_driven": 8,
+      "n_housekeeping": 12,
+      "dar": 0.4,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "TP63",
+        "EGFR",
+        "GRB2",
+        "EFR3A",
+        "BUB3"
+      ],
+      "top3_oncogene": [
+        "TP63",
+        "ARHGEF7",
+        "KLF5"
+      ],
+      "top3_housekeeping": [
+        "EGFR",
+        "GRB2",
+        "EFR3A"
+      ]
+    },
+    {
+      "lineage": "Bone",
+      "n_cell_lines": 46,
+      "top_n": 20,
+      "n_oncogene_driven": 7,
+      "n_housekeeping": 13,
+      "dar": 0.35,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "SEPSECS",
+        "CDK4",
+        "EWSR1",
+        "PGK1",
+        "UBE2N"
+      ],
+      "top3_oncogene": [
+        "EWSR1",
+        "UBE2N",
+        "TUBB"
+      ],
+      "top3_housekeeping": [
+        "SEPSECS",
+        "CDK4",
+        "PGK1"
+      ]
+    },
+    {
+      "lineage": "Myeloid",
+      "n_cell_lines": 42,
+      "top_n": 20,
+      "n_oncogene_driven": 6,
+      "n_housekeeping": 14,
+      "dar": 0.3,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "MYB",
+        "CBFB",
+        "WDR36",
+        "UMPS",
+        "ADSL"
+      ],
+      "top3_oncogene": [
+        "MYB",
+        "NAMPT",
+        "LDB1"
+      ],
+      "top3_housekeeping": [
+        "CBFB",
+        "WDR36",
+        "UMPS"
+      ]
+    },
+    {
+      "lineage": "Soft Tissue",
+      "n_cell_lines": 45,
+      "top_n": 20,
+      "n_oncogene_driven": 7,
+      "n_housekeeping": 13,
+      "dar": 0.35,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "SMG1",
+        "CR1",
+        "EEF1A1",
+        "ZC3H11A",
+        "FRRS1"
+      ],
+      "top3_oncogene": [
+        "SMG1",
+        "EEF1A1",
+        "ZC3H11A"
+      ],
+      "top3_housekeeping": [
+        "CR1",
+        "FRRS1",
+        "WDR49"
+      ]
+    },
+    {
+      "lineage": "Ovary/Fallopian Tube",
+      "n_cell_lines": 59,
+      "top_n": 20,
+      "n_oncogene_driven": 5,
+      "n_housekeeping": 15,
+      "dar": 0.25,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "PAX8",
+        "FERMT2",
+        "CFLAR",
+        "EIF1AX",
+        "DNAJC9"
+      ],
+      "top3_oncogene": [
+        "PAX8",
+        "FERMT2",
+        "ATP6V1A"
+      ],
+      "top3_housekeeping": [
+        "CFLAR",
+        "EIF1AX",
+        "DNAJC9"
+      ]
+    },
+    {
+      "lineage": "Kidney",
+      "n_cell_lines": 34,
+      "top_n": 20,
+      "n_oncogene_driven": 9,
+      "n_housekeeping": 11,
+      "dar": 0.45,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "HNF1B",
+        "PAX8",
+        "CFLAR",
+        "FERMT2",
+        "MDM2"
+      ],
+      "top3_oncogene": [
+        "HNF1B",
+        "PAX8",
+        "FERMT2"
+      ],
+      "top3_housekeeping": [
+        "CFLAR",
+        "MDM2",
+        "SEPHS2"
+      ]
+    },
+    {
+      "lineage": "Pancreas",
+      "n_cell_lines": 47,
+      "top_n": 20,
+      "n_oncogene_driven": 9,
+      "n_housekeeping": 11,
+      "dar": 0.45,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "KRAS",
+        "EFR3A",
+        "RAB10",
+        "CCND1",
+        "CFLAR"
+      ],
+      "top3_oncogene": [
+        "KRAS",
+        "RAB10",
+        "MYH9"
+      ],
+      "top3_housekeeping": [
+        "EFR3A",
+        "CCND1",
+        "CFLAR"
+      ]
+    },
+    {
+      "lineage": "Peripheral Nervous System",
+      "n_cell_lines": 44,
+      "top_n": 20,
+      "n_oncogene_driven": 8,
+      "n_housekeeping": 12,
+      "dar": 0.4,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "CCND1",
+        "IRS2",
+        "ISL1",
+        "NXT1",
+        "LDB1"
+      ],
+      "top3_oncogene": [
+        "ISL1",
+        "NXT1",
+        "LDB1"
+      ],
+      "top3_housekeeping": [
+        "CCND1",
+        "IRS2",
+        "SEPHS2"
+      ]
+    },
+    {
+      "lineage": "Biliary Tract",
+      "n_cell_lines": 35,
+      "top_n": 20,
+      "n_oncogene_driven": 4,
+      "n_housekeeping": 16,
+      "dar": 0.2,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "SMG1",
+        "PTGES3L",
+        "NPM1",
+        "C5orf58",
+        "E2F6"
+      ],
+      "top3_oncogene": [
+        "SMG1",
+        "NPM1",
+        "EEF1A1"
+      ],
+      "top3_housekeeping": [
+        "PTGES3L",
+        "C5orf58",
+        "E2F6"
+      ]
+    },
+    {
+      "lineage": "Uterus",
+      "n_cell_lines": 34,
+      "top_n": 20,
+      "n_oncogene_driven": 6,
+      "n_housekeeping": 14,
+      "dar": 0.3,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "PAX8",
+        "BCL2L1",
+        "FERMT2",
+        "DDX3X",
+        "NDUFB1"
+      ],
+      "top3_oncogene": [
+        "PAX8",
+        "FERMT2",
+        "RBM25"
+      ],
+      "top3_housekeeping": [
+        "BCL2L1",
+        "DDX3X",
+        "NDUFB1"
+      ]
+    },
+    {
+      "lineage": "Bladder/Urinary Tract",
+      "n_cell_lines": 34,
+      "top_n": 20,
+      "n_oncogene_driven": 6,
+      "n_housekeeping": 14,
+      "dar": 0.3,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "FAM50A",
+        "SNAP23",
+        "LONP1",
+        "STX4",
+        "EFR3A"
+      ],
+      "top3_oncogene": [
+        "LONP1",
+        "ARHGEF7",
+        "UBE2N"
+      ],
+      "top3_housekeeping": [
+        "FAM50A",
+        "SNAP23",
+        "STX4"
+      ]
+    },
+    {
+      "lineage": "Pleura",
+      "n_cell_lines": 21,
+      "top_n": 20,
+      "n_oncogene_driven": 7,
+      "n_housekeeping": 13,
+      "dar": 0.35,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "RRN3",
+        "SMG1",
+        "MDM2",
+        "FGFR1",
+        "FERMT2"
+      ],
+      "top3_oncogene": [
+        "SMG1",
+        "FGFR1",
+        "FERMT2"
+      ],
+      "top3_housekeeping": [
+        "RRN3",
+        "MDM2",
+        "SNAP23"
+      ]
+    },
+    {
+      "lineage": "Liver",
+      "n_cell_lines": 24,
+      "top_n": 20,
+      "n_oncogene_driven": 11,
+      "n_housekeeping": 9,
+      "dar": 0.55,
+      "predicted_hr_direction": "protective",
+      "top5_differential": [
+        "CCND1",
+        "INTS6",
+        "PTK2",
+        "GRB2",
+        "ITGAV"
+      ],
+      "top3_oncogene": [
+        "INTS6",
+        "PTK2",
+        "TUBB"
+      ],
+      "top3_housekeeping": [
+        "CCND1",
+        "GRB2",
+        "ITGAV"
+      ]
+    },
+    {
+      "lineage": "Thyroid",
+      "n_cell_lines": 11,
+      "top_n": 20,
+      "n_oncogene_driven": 5,
+      "n_housekeeping": 15,
+      "dar": 0.25,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "NHLRC2",
+        "ITGAV",
+        "FERMT2",
+        "PRKRA",
+        "GPI"
+      ],
+      "top3_oncogene": [
+        "FERMT2",
+        "EIF3B",
+        "HDAC3"
+      ],
+      "top3_housekeeping": [
+        "NHLRC2",
+        "ITGAV",
+        "PRKRA"
+      ]
+    },
+    {
+      "lineage": "Cervix",
+      "n_cell_lines": 18,
+      "top_n": 20,
+      "n_oncogene_driven": 9,
+      "n_housekeeping": 11,
+      "dar": 0.45,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "ZER1",
+        "SKP2",
+        "UBE3A",
+        "CKS1B",
+        "ELOB"
+      ],
+      "top3_oncogene": [
+        "ZER1",
+        "UBE3A",
+        "CKS1B"
+      ],
+      "top3_housekeeping": [
+        "SKP2",
+        "ELOB",
+        "CUL2"
+      ]
+    },
+    {
+      "lineage": "Eye",
+      "n_cell_lines": 15,
+      "top_n": 20,
+      "n_oncogene_driven": 6,
+      "n_housekeeping": 14,
+      "dar": 0.3,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "MDM2",
+        "PPM1G",
+        "MDM4",
+        "CDK4",
+        "CCND1"
+      ],
+      "top3_oncogene": [
+        "PPM1G",
+        "MDM4",
+        "INTS6"
+      ],
+      "top3_housekeeping": [
+        "MDM2",
+        "CDK4",
+        "CCND1"
+      ]
+    },
+    {
+      "lineage": "Prostate",
+      "n_cell_lines": 10,
+      "top_n": 20,
+      "n_oncogene_driven": 7,
+      "n_housekeeping": 13,
+      "dar": 0.35,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "EGFR",
+        "ITGB1",
+        "KIF11",
+        "LCE1F",
+        "MED24"
+      ],
+      "top3_oncogene": [
+        "ITGB1",
+        "ATP1A1",
+        "MAGOH"
+      ],
+      "top3_housekeeping": [
+        "EGFR",
+        "KIF11",
+        "LCE1F"
+      ]
+    },
+    {
+      "lineage": "Testis",
+      "n_cell_lines": 5,
+      "top_n": 20,
+      "n_oncogene_driven": 7,
+      "n_housekeeping": 13,
+      "dar": 0.35,
+      "predicted_hr_direction": "harmful",
+      "top5_differential": [
+        "SMG1",
+        "TIMM50",
+        "FOXD4",
+        "SEPSECS",
+        "MDM2"
+      ],
+      "top3_oncogene": [
+        "SMG1",
+        "MCL1",
+        "NMT1"
+      ],
+      "top3_housekeeping": [
+        "TIMM50",
+        "FOXD4",
+        "SEPSECS"
+      ]
+    }
+  ],
+  "gene_details": {
+    "Lung": [
+      {
+        "gene": "TFRC",
+        "lineage_median": -0.9675,
+        "global_median": -0.7778,
+        "diff_score": -0.1897,
+        "pLI": 0.9325,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "LCE1F",
+        "lineage_median": -1.0288,
+        "global_median": -0.8484,
+        "diff_score": -0.1804,
+        "pLI": 0.0024,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PGD",
+        "lineage_median": -1.043,
+        "global_median": -0.8636,
+        "diff_score": -0.1793,
+        "pLI": 0.1243,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TRPM7",
+        "lineage_median": -0.8473,
+        "global_median": -0.6696,
+        "diff_score": -0.1777,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GMPS",
+        "lineage_median": -1.2041,
+        "global_median": -1.0469,
+        "diff_score": -0.1572,
+        "pLI": 0.0853,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SPRR1B",
+        "lineage_median": -0.7177,
+        "global_median": -0.5678,
+        "diff_score": -0.15,
+        "pLI": 0.0043,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CENATAC",
+        "lineage_median": -1.3083,
+        "global_median": -1.1584,
+        "diff_score": -0.1499,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDCA5",
+        "lineage_median": -1.0086,
+        "global_median": -0.8639,
+        "diff_score": -0.1447,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "DDX3X",
+        "lineage_median": -1.0752,
+        "global_median": -0.9364,
+        "diff_score": -0.1389,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "AURKA",
+        "lineage_median": -1.3593,
+        "global_median": -1.2257,
+        "diff_score": -0.1336,
+        "pLI": 0.9883,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SRSF7",
+        "lineage_median": -2.2164,
+        "global_median": -2.084,
+        "diff_score": -0.1323,
+        "pLI": 0.1655,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UXS1",
+        "lineage_median": -0.3389,
+        "global_median": -0.2092,
+        "diff_score": -0.1297,
+        "pLI": 0.5739,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MYC",
+        "lineage_median": -1.9476,
+        "global_median": -1.8187,
+        "diff_score": -0.1288,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SF3A3",
+        "lineage_median": -2.4366,
+        "global_median": -2.3082,
+        "diff_score": -0.1284,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "KRT8",
+        "lineage_median": -0.7298,
+        "global_median": -0.6015,
+        "diff_score": -0.1282,
+        "pLI": 0.0007,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "DDX5",
+        "lineage_median": -0.8866,
+        "global_median": -0.7591,
+        "diff_score": -0.1274,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KRAS",
+        "lineage_median": -0.4992,
+        "global_median": -0.3732,
+        "diff_score": -0.126,
+        "pLI": 0.9953,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SNRNP35",
+        "lineage_median": -1.7606,
+        "global_median": -1.636,
+        "diff_score": -0.1246,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UBIAD1",
+        "lineage_median": -0.5156,
+        "global_median": -0.395,
+        "diff_score": -0.1206,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "IMPDH2",
+        "lineage_median": -0.6596,
+        "global_median": -0.542,
+        "diff_score": -0.1176,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Lymphoid": [
+      {
+        "gene": "IRF4",
+        "lineage_median": -0.9859,
+        "global_median": -0.0517,
+        "diff_score": -0.9342,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NMNAT1",
+        "lineage_median": -1.0183,
+        "global_median": -0.1498,
+        "diff_score": -0.8685,
+        "pLI": 0.1151,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ATP1B3",
+        "lineage_median": -0.9919,
+        "global_median": -0.2383,
+        "diff_score": -0.7535,
+        "pLI": 0.1714,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CBFB",
+        "lineage_median": -0.8386,
+        "global_median": -0.1654,
+        "diff_score": -0.6732,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NAMPT",
+        "lineage_median": -0.9498,
+        "global_median": -0.2941,
+        "diff_score": -0.6557,
+        "pLI": 0.9962,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "UMPS",
+        "lineage_median": -0.8934,
+        "global_median": -0.2386,
+        "diff_score": -0.6548,
+        "pLI": 0.2219,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EBF1",
+        "lineage_median": -0.6379,
+        "global_median": -0.0035,
+        "diff_score": -0.6344,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "EP300",
+        "lineage_median": -0.9001,
+        "global_median": -0.2745,
+        "diff_score": -0.6256,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MBNL1",
+        "lineage_median": -0.8048,
+        "global_median": -0.1869,
+        "diff_score": -0.6179,
+        "pLI": 0.9998,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SDHB",
+        "lineage_median": -0.9914,
+        "global_median": -0.388,
+        "diff_score": -0.6034,
+        "pLI": 0.0316,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FAM50A",
+        "lineage_median": -0.9414,
+        "global_median": -0.3461,
+        "diff_score": -0.5954,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FPGS",
+        "lineage_median": -0.8925,
+        "global_median": -0.3123,
+        "diff_score": -0.5801,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SEPHS2",
+        "lineage_median": -1.1326,
+        "global_median": -0.5525,
+        "diff_score": -0.5801,
+        "pLI": 0.006,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CFL1",
+        "lineage_median": -1.0522,
+        "global_median": -0.4774,
+        "diff_score": -0.5749,
+        "pLI": 0.8922,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PAICS",
+        "lineage_median": -1.089,
+        "global_median": -0.5178,
+        "diff_score": -0.5712,
+        "pLI": 0.7545,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "DNAJC9",
+        "lineage_median": -1.582,
+        "global_median": -1.0388,
+        "diff_score": -0.5432,
+        "pLI": 0.0009,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TFRC",
+        "lineage_median": -1.3148,
+        "global_median": -0.7778,
+        "diff_score": -0.537,
+        "pLI": 0.9325,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PPCDC",
+        "lineage_median": -0.5681,
+        "global_median": -0.0377,
+        "diff_score": -0.5304,
+        "pLI": 0.0001,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ADSL",
+        "lineage_median": -1.3616,
+        "global_median": -0.8426,
+        "diff_score": -0.5189,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UROD",
+        "lineage_median": -1.0353,
+        "global_median": -0.5165,
+        "diff_score": -0.5188,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Skin": [
+      {
+        "gene": "SOX10",
+        "lineage_median": -1.3233,
+        "global_median": -0.2129,
+        "diff_score": -1.1104,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "BRAF",
+        "lineage_median": -0.9433,
+        "global_median": -0.0309,
+        "diff_score": -0.9124,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MDM2",
+        "lineage_median": -1.0841,
+        "global_median": -0.3779,
+        "diff_score": -0.7062,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -1.0921,
+        "global_median": -0.461,
+        "diff_score": -0.631,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CCND1",
+        "lineage_median": -1.472,
+        "global_median": -0.8446,
+        "diff_score": -0.6274,
+        "pLI": 0.2863,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "INTS6",
+        "lineage_median": -1.2455,
+        "global_median": -0.7199,
+        "diff_score": -0.5256,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "DUSP4",
+        "lineage_median": -0.5341,
+        "global_median": -0.0213,
+        "diff_score": -0.5129,
+        "pLI": 0.2753,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ZEB2",
+        "lineage_median": -0.7137,
+        "global_median": -0.2533,
+        "diff_score": -0.4603,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MAPK1",
+        "lineage_median": -0.6773,
+        "global_median": -0.2172,
+        "diff_score": -0.4601,
+        "pLI": 0.9968,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "NHLRC2",
+        "lineage_median": -1.0721,
+        "global_median": -0.6139,
+        "diff_score": -0.4582,
+        "pLI": 0.0387,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CRKL",
+        "lineage_median": -1.1927,
+        "global_median": -0.8121,
+        "diff_score": -0.3806,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TXN",
+        "lineage_median": -1.4437,
+        "global_median": -1.0653,
+        "diff_score": -0.3784,
+        "pLI": 0.0587,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PPP2R2A",
+        "lineage_median": -0.528,
+        "global_median": -0.1624,
+        "diff_score": -0.3657,
+        "pLI": 0.999,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ATP6V1B2",
+        "lineage_median": -2.2569,
+        "global_median": -1.8926,
+        "diff_score": -0.3643,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PSMD14",
+        "lineage_median": -2.0177,
+        "global_median": -1.654,
+        "diff_score": -0.3637,
+        "pLI": 0.9469,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ITGAV",
+        "lineage_median": -0.8858,
+        "global_median": -0.5359,
+        "diff_score": -0.3499,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PTK2",
+        "lineage_median": -0.8403,
+        "global_median": -0.494,
+        "diff_score": -0.3463,
+        "pLI": 0.5286,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "WDR70",
+        "lineage_median": -1.6803,
+        "global_median": -1.3358,
+        "diff_score": -0.3445,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "LCMT1",
+        "lineage_median": -0.638,
+        "global_median": -0.3061,
+        "diff_score": -0.3319,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "E2F6",
+        "lineage_median": -0.1882,
+        "global_median": 0.1389,
+        "diff_score": -0.3271,
+        "pLI": 0.0002,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "CNS/Brain": [
+      {
+        "gene": "RPP25L",
+        "lineage_median": -0.8397,
+        "global_median": -0.2341,
+        "diff_score": -0.6056,
+        "pLI": 0.0777,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -0.9941,
+        "global_median": -0.461,
+        "diff_score": -0.5331,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ITGAV",
+        "lineage_median": -0.965,
+        "global_median": -0.5359,
+        "diff_score": -0.4292,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FAM50A",
+        "lineage_median": -0.7365,
+        "global_median": -0.3461,
+        "diff_score": -0.3904,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PRKAR1A",
+        "lineage_median": -0.4584,
+        "global_median": -0.1118,
+        "diff_score": -0.3466,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "NHLRC2",
+        "lineage_median": -0.9139,
+        "global_median": -0.6139,
+        "diff_score": -0.2999,
+        "pLI": 0.0387,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KIF18A",
+        "lineage_median": -1.5588,
+        "global_median": -1.2606,
+        "diff_score": -0.2982,
+        "pLI": 0.0009,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PTK2",
+        "lineage_median": -0.7737,
+        "global_median": -0.494,
+        "diff_score": -0.2797,
+        "pLI": 0.5286,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "HNRNPH1",
+        "lineage_median": -1.4114,
+        "global_median": -1.1342,
+        "diff_score": -0.2772,
+        "pLI": 0.5627,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PSMG4",
+        "lineage_median": -1.5867,
+        "global_median": -1.3152,
+        "diff_score": -0.2715,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SEPSECS",
+        "lineage_median": -0.7256,
+        "global_median": -0.4594,
+        "diff_score": -0.2662,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TUBB",
+        "lineage_median": -1.9746,
+        "global_median": -1.7177,
+        "diff_score": -0.2569,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "JUN",
+        "lineage_median": -0.4899,
+        "global_median": -0.2429,
+        "diff_score": -0.247,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "C3orf38",
+        "lineage_median": -0.5161,
+        "global_median": -0.272,
+        "diff_score": -0.2441,
+        "pLI": 0.0708,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ITGB5",
+        "lineage_median": -0.4702,
+        "global_median": -0.2299,
+        "diff_score": -0.2403,
+        "pLI": 0.2681,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PDCD2",
+        "lineage_median": -1.4426,
+        "global_median": -1.207,
+        "diff_score": -0.2357,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SPOUT1",
+        "lineage_median": -1.5709,
+        "global_median": -1.3394,
+        "diff_score": -0.2314,
+        "pLI": 0.0146,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "BRAT1",
+        "lineage_median": -0.5978,
+        "global_median": -0.3701,
+        "diff_score": -0.2276,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UBC",
+        "lineage_median": -0.6257,
+        "global_median": -0.4029,
+        "diff_score": -0.2227,
+        "pLI": 0.8261,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "VRK1",
+        "lineage_median": -0.6746,
+        "global_median": -0.4595,
+        "diff_score": -0.2152,
+        "pLI": 0.0088,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Esophagus/Stomach": [
+      {
+        "gene": "SNAP23",
+        "lineage_median": -1.1328,
+        "global_median": -0.6194,
+        "diff_score": -0.5134,
+        "pLI": 0.2815,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CCND1",
+        "lineage_median": -1.2528,
+        "global_median": -0.8446,
+        "diff_score": -0.4082,
+        "pLI": 0.2863,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "STX4",
+        "lineage_median": -0.5987,
+        "global_median": -0.2529,
+        "diff_score": -0.3458,
+        "pLI": 0.003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ATP1A1",
+        "lineage_median": -1.4096,
+        "global_median": -1.075,
+        "diff_score": -0.3346,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "KLF5",
+        "lineage_median": -0.5613,
+        "global_median": -0.2312,
+        "diff_score": -0.33,
+        "pLI": 0.9998,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TRPM7",
+        "lineage_median": -0.9488,
+        "global_median": -0.6696,
+        "diff_score": -0.2792,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "STXBP3",
+        "lineage_median": -0.6353,
+        "global_median": -0.3646,
+        "diff_score": -0.2707,
+        "pLI": 0.0003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PAICS",
+        "lineage_median": -0.7824,
+        "global_median": -0.5178,
+        "diff_score": -0.2646,
+        "pLI": 0.7545,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "GART",
+        "lineage_median": -0.6839,
+        "global_median": -0.4255,
+        "diff_score": -0.2584,
+        "pLI": 0.8715,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MRPS14",
+        "lineage_median": -0.8224,
+        "global_median": -0.581,
+        "diff_score": -0.2414,
+        "pLI": 0.0001,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RAB10",
+        "lineage_median": -0.6059,
+        "global_median": -0.3686,
+        "diff_score": -0.2373,
+        "pLI": 0.9518,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "GMPS",
+        "lineage_median": -1.2766,
+        "global_median": -1.0469,
+        "diff_score": -0.2297,
+        "pLI": 0.0853,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "DUT",
+        "lineage_median": -1.9876,
+        "global_median": -1.7685,
+        "diff_score": -0.2191,
+        "pLI": 0.0113,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RARS2",
+        "lineage_median": -0.6861,
+        "global_median": -0.4698,
+        "diff_score": -0.2162,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SOD2",
+        "lineage_median": -0.8274,
+        "global_median": -0.6179,
+        "diff_score": -0.2095,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GRB2",
+        "lineage_median": -1.1066,
+        "global_median": -0.9018,
+        "diff_score": -0.2048,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RBM18",
+        "lineage_median": -0.3918,
+        "global_median": -0.1911,
+        "diff_score": -0.2006,
+        "pLI": 0.0025,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ADSL",
+        "lineage_median": -1.0429,
+        "global_median": -0.8426,
+        "diff_score": -0.2002,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ATP5ME",
+        "lineage_median": -0.5935,
+        "global_median": -0.3974,
+        "diff_score": -0.1961,
+        "pLI": 0.0003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "POLR3H",
+        "lineage_median": -1.7945,
+        "global_median": -1.6039,
+        "diff_score": -0.1905,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Bowel": [
+      {
+        "gene": "CTNNB1",
+        "lineage_median": -1.1287,
+        "global_median": -0.1053,
+        "diff_score": -1.0234,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "BCL2L1",
+        "lineage_median": -1.5481,
+        "global_median": -0.9096,
+        "diff_score": -0.6385,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KRAS",
+        "lineage_median": -1.0111,
+        "global_median": -0.3732,
+        "diff_score": -0.6379,
+        "pLI": 0.9953,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TCF7L2",
+        "lineage_median": -0.654,
+        "global_median": -0.0414,
+        "diff_score": -0.6127,
+        "pLI": 0.9837,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SNAP23",
+        "lineage_median": -1.2083,
+        "global_median": -0.6194,
+        "diff_score": -0.5889,
+        "pLI": 0.2815,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SCAP",
+        "lineage_median": -1.5665,
+        "global_median": -0.9777,
+        "diff_score": -0.5888,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KLF5",
+        "lineage_median": -0.7904,
+        "global_median": -0.2312,
+        "diff_score": -0.5591,
+        "pLI": 0.9998,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "FAM50A",
+        "lineage_median": -0.891,
+        "global_median": -0.3461,
+        "diff_score": -0.5449,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RAB10",
+        "lineage_median": -0.8447,
+        "global_median": -0.3686,
+        "diff_score": -0.4761,
+        "pLI": 0.9518,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "STX4",
+        "lineage_median": -0.693,
+        "global_median": -0.2529,
+        "diff_score": -0.4401,
+        "pLI": 0.003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SCD",
+        "lineage_median": -1.146,
+        "global_median": -0.7271,
+        "diff_score": -0.4189,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ADSL",
+        "lineage_median": -1.1967,
+        "global_median": -0.8426,
+        "diff_score": -0.3541,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NXT1",
+        "lineage_median": -0.706,
+        "global_median": -0.3592,
+        "diff_score": -0.3468,
+        "pLI": 0.6861,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PPAT",
+        "lineage_median": -0.975,
+        "global_median": -0.631,
+        "diff_score": -0.344,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TTC7A",
+        "lineage_median": -0.5005,
+        "global_median": -0.1585,
+        "diff_score": -0.342,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "DBF4",
+        "lineage_median": -1.1452,
+        "global_median": -0.8231,
+        "diff_score": -0.3221,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PFAS",
+        "lineage_median": -0.6372,
+        "global_median": -0.3224,
+        "diff_score": -0.3148,
+        "pLI": 0.0239,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GART",
+        "lineage_median": -0.7319,
+        "global_median": -0.4255,
+        "diff_score": -0.3064,
+        "pLI": 0.8715,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ADSS2",
+        "lineage_median": -0.814,
+        "global_median": -0.5122,
+        "diff_score": -0.3018,
+        "pLI": 0.1319,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GINS2",
+        "lineage_median": -2.3945,
+        "global_median": -2.0957,
+        "diff_score": -0.2989,
+        "pLI": 0.0195,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Breast": [
+      {
+        "gene": "ADSL",
+        "lineage_median": -1.2877,
+        "global_median": -0.8426,
+        "diff_score": -0.4451,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ATP1A1",
+        "lineage_median": -1.4572,
+        "global_median": -1.075,
+        "diff_score": -0.3822,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SDHB",
+        "lineage_median": -0.7502,
+        "global_median": -0.388,
+        "diff_score": -0.3623,
+        "pLI": 0.0316,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KIF11",
+        "lineage_median": -2.9668,
+        "global_median": -2.6082,
+        "diff_score": -0.3586,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CCND1",
+        "lineage_median": -1.1778,
+        "global_median": -0.8446,
+        "diff_score": -0.3332,
+        "pLI": 0.2863,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NAMPT",
+        "lineage_median": -0.615,
+        "global_median": -0.2941,
+        "diff_score": -0.3209,
+        "pLI": 0.9962,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CLTC",
+        "lineage_median": -1.7409,
+        "global_median": -1.4248,
+        "diff_score": -0.3161,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "UBR4",
+        "lineage_median": -1.3966,
+        "global_median": -1.088,
+        "diff_score": -0.3085,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "YRDC",
+        "lineage_median": -2.0714,
+        "global_median": -1.7646,
+        "diff_score": -0.3068,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UMPS",
+        "lineage_median": -0.5437,
+        "global_median": -0.2386,
+        "diff_score": -0.3051,
+        "pLI": 0.2219,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CWC22",
+        "lineage_median": -1.8123,
+        "global_median": -1.5151,
+        "diff_score": -0.2972,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDK1",
+        "lineage_median": -2.6834,
+        "global_median": -2.3876,
+        "diff_score": -0.2958,
+        "pLI": 0.4586,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "YPEL5",
+        "lineage_median": -0.9397,
+        "global_median": -0.6527,
+        "diff_score": -0.287,
+        "pLI": 0.9835,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "HAUS7",
+        "lineage_median": -1.4496,
+        "global_median": -1.174,
+        "diff_score": -0.2756,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KRT8",
+        "lineage_median": -0.8755,
+        "global_median": -0.6015,
+        "diff_score": -0.274,
+        "pLI": 0.0007,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ACTB",
+        "lineage_median": -0.837,
+        "global_median": -0.5687,
+        "diff_score": -0.2683,
+        "pLI": 0.995,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MAT2A",
+        "lineage_median": -2.0142,
+        "global_median": -1.7486,
+        "diff_score": -0.2656,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "STX4",
+        "lineage_median": -0.5151,
+        "global_median": -0.2529,
+        "diff_score": -0.2621,
+        "pLI": 0.003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDK4",
+        "lineage_median": -0.8784,
+        "global_median": -0.6177,
+        "diff_score": -0.2607,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ESPL1",
+        "lineage_median": -2.3155,
+        "global_median": -2.0582,
+        "diff_score": -0.2573,
+        "pLI": 0.4766,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Head and Neck": [
+      {
+        "gene": "TP63",
+        "lineage_median": -0.5144,
+        "global_median": 0.0369,
+        "diff_score": -0.5513,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "EGFR",
+        "lineage_median": -0.6769,
+        "global_median": -0.1888,
+        "diff_score": -0.4881,
+        "pLI": 0.4073,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GRB2",
+        "lineage_median": -1.3688,
+        "global_median": -0.9018,
+        "diff_score": -0.467,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EFR3A",
+        "lineage_median": -0.7735,
+        "global_median": -0.3535,
+        "diff_score": -0.42,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "BUB3",
+        "lineage_median": -2.5586,
+        "global_median": -2.1916,
+        "diff_score": -0.3671,
+        "pLI": 0.0227,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PFDN1",
+        "lineage_median": -0.948,
+        "global_median": -0.5973,
+        "diff_score": -0.3507,
+        "pLI": 0.0855,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ARHGEF7",
+        "lineage_median": -0.5368,
+        "global_median": -0.1929,
+        "diff_score": -0.3439,
+        "pLI": 0.7681,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "KLF5",
+        "lineage_median": -0.5749,
+        "global_median": -0.2312,
+        "diff_score": -0.3437,
+        "pLI": 0.9998,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PPP1R12A",
+        "lineage_median": -1.5937,
+        "global_median": -1.2538,
+        "diff_score": -0.3399,
+        "pLI": 0.9958,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "STX4",
+        "lineage_median": -0.5903,
+        "global_median": -0.2529,
+        "diff_score": -0.3374,
+        "pLI": 0.003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDK6",
+        "lineage_median": -0.8392,
+        "global_median": -0.5046,
+        "diff_score": -0.3347,
+        "pLI": 0.9972,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SNRPB2",
+        "lineage_median": -1.0278,
+        "global_median": -0.6933,
+        "diff_score": -0.3345,
+        "pLI": 0.0083,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ITGB1",
+        "lineage_median": -0.482,
+        "global_median": -0.1514,
+        "diff_score": -0.3307,
+        "pLI": 0.9998,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "LONP1",
+        "lineage_median": -1.6928,
+        "global_median": -1.3802,
+        "diff_score": -0.3125,
+        "pLI": 0.9914,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TUBA1C",
+        "lineage_median": -1.1133,
+        "global_median": -0.8061,
+        "diff_score": -0.3072,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RPP40",
+        "lineage_median": -1.1708,
+        "global_median": -0.8683,
+        "diff_score": -0.3025,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "AK6",
+        "lineage_median": -1.3767,
+        "global_median": -1.0776,
+        "diff_score": -0.2992,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MTPAP",
+        "lineage_median": -0.8177,
+        "global_median": -0.5405,
+        "diff_score": -0.2772,
+        "pLI": 0.1043,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SNAP23",
+        "lineage_median": -0.8956,
+        "global_median": -0.6194,
+        "diff_score": -0.2762,
+        "pLI": 0.2815,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SNAI2",
+        "lineage_median": -0.3017,
+        "global_median": -0.029,
+        "diff_score": -0.2727,
+        "pLI": 0.8292,
+        "dep_type": "oncogene-driven"
+      }
+    ],
+    "Bone": [
+      {
+        "gene": "SEPSECS",
+        "lineage_median": -0.9044,
+        "global_median": -0.4594,
+        "diff_score": -0.445,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDK4",
+        "lineage_median": -1.0285,
+        "global_median": -0.6177,
+        "diff_score": -0.4108,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EWSR1",
+        "lineage_median": -1.209,
+        "global_median": -0.8353,
+        "diff_score": -0.3737,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PGK1",
+        "lineage_median": -1.1192,
+        "global_median": -0.7663,
+        "diff_score": -0.3529,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UBE2N",
+        "lineage_median": -1.4135,
+        "global_median": -1.0894,
+        "diff_score": -0.3241,
+        "pLI": 0.9694,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TXNRD1",
+        "lineage_median": -0.7807,
+        "global_median": -0.4577,
+        "diff_score": -0.323,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TUBB",
+        "lineage_median": -2.0315,
+        "global_median": -1.7177,
+        "diff_score": -0.3138,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ALDOA",
+        "lineage_median": -1.5636,
+        "global_median": -1.2526,
+        "diff_score": -0.311,
+        "pLI": 0.0003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EEF1A1",
+        "lineage_median": -2.4429,
+        "global_median": -2.1357,
+        "diff_score": -0.3072,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ZEB2",
+        "lineage_median": -0.5472,
+        "global_median": -0.2533,
+        "diff_score": -0.2939,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FEN1",
+        "lineage_median": -1.0957,
+        "global_median": -0.8039,
+        "diff_score": -0.2917,
+        "pLI": 0.0013,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EEFSEC",
+        "lineage_median": -0.7429,
+        "global_median": -0.4627,
+        "diff_score": -0.2803,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SNAPC1",
+        "lineage_median": -1.9069,
+        "global_median": -1.6281,
+        "diff_score": -0.2788,
+        "pLI": 0.0002,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDIN1",
+        "lineage_median": -0.6073,
+        "global_median": -0.3286,
+        "diff_score": -0.2787,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "IGF1R",
+        "lineage_median": -0.5174,
+        "global_median": -0.2405,
+        "diff_score": -0.2769,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "HNRNPH1",
+        "lineage_median": -1.4074,
+        "global_median": -1.1342,
+        "diff_score": -0.2732,
+        "pLI": 0.5627,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MAD2L2",
+        "lineage_median": -1.0953,
+        "global_median": -0.829,
+        "diff_score": -0.2663,
+        "pLI": 0.0081,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "WDR36",
+        "lineage_median": -1.8192,
+        "global_median": -1.555,
+        "diff_score": -0.2642,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TRIM8",
+        "lineage_median": -0.3476,
+        "global_median": -0.0854,
+        "diff_score": -0.2622,
+        "pLI": 0.9929,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CDAN1",
+        "lineage_median": -1.074,
+        "global_median": -0.8168,
+        "diff_score": -0.2572,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Myeloid": [
+      {
+        "gene": "MYB",
+        "lineage_median": -1.2533,
+        "global_median": -0.2623,
+        "diff_score": -0.9909,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CBFB",
+        "lineage_median": -1.1062,
+        "global_median": -0.1654,
+        "diff_score": -0.9409,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "WDR36",
+        "lineage_median": -2.2484,
+        "global_median": -1.555,
+        "diff_score": -0.6934,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UMPS",
+        "lineage_median": -0.8924,
+        "global_median": -0.2386,
+        "diff_score": -0.6538,
+        "pLI": 0.2219,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ADSL",
+        "lineage_median": -1.4536,
+        "global_median": -0.8426,
+        "diff_score": -0.611,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NAMPT",
+        "lineage_median": -0.9034,
+        "global_median": -0.2941,
+        "diff_score": -0.6092,
+        "pLI": 0.9962,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "LDB1",
+        "lineage_median": -0.7691,
+        "global_median": -0.2135,
+        "diff_score": -0.5556,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TFRC",
+        "lineage_median": -1.3312,
+        "global_median": -0.7778,
+        "diff_score": -0.5534,
+        "pLI": 0.9325,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SMG1",
+        "lineage_median": -1.5269,
+        "global_median": -0.9783,
+        "diff_score": -0.5486,
+        "pLI": 0.6832,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "DNM2",
+        "lineage_median": -1.728,
+        "global_median": -1.1938,
+        "diff_score": -0.5343,
+        "pLI": 0.1169,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FAM50A",
+        "lineage_median": -0.876,
+        "global_median": -0.3461,
+        "diff_score": -0.53,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TIMM50",
+        "lineage_median": -0.9031,
+        "global_median": -0.3834,
+        "diff_score": -0.5197,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "LMO2",
+        "lineage_median": -0.5009,
+        "global_median": 0.0172,
+        "diff_score": -0.518,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDAN1",
+        "lineage_median": -1.3301,
+        "global_median": -0.8168,
+        "diff_score": -0.5133,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ATP1B3",
+        "lineage_median": -0.7461,
+        "global_median": -0.2383,
+        "diff_score": -0.5078,
+        "pLI": 0.1714,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SDHB",
+        "lineage_median": -0.893,
+        "global_median": -0.388,
+        "diff_score": -0.505,
+        "pLI": 0.0316,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "AP2S1",
+        "lineage_median": -1.0665,
+        "global_median": -0.5657,
+        "diff_score": -0.5008,
+        "pLI": 0.9608,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MED1",
+        "lineage_median": -1.1256,
+        "global_median": -0.6278,
+        "diff_score": -0.4978,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TAFAZZIN",
+        "lineage_median": -0.8008,
+        "global_median": -0.3125,
+        "diff_score": -0.4884,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TRPM7",
+        "lineage_median": -1.1577,
+        "global_median": -0.6696,
+        "diff_score": -0.4881,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Soft Tissue": [
+      {
+        "gene": "SMG1",
+        "lineage_median": -2.0571,
+        "global_median": -0.9783,
+        "diff_score": -1.0788,
+        "pLI": 0.6832,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CR1",
+        "lineage_median": -0.4626,
+        "global_median": 0.1636,
+        "diff_score": -0.6263,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EEF1A1",
+        "lineage_median": -2.7576,
+        "global_median": -2.1357,
+        "diff_score": -0.6219,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ZC3H11A",
+        "lineage_median": -0.6194,
+        "global_median": -0.0835,
+        "diff_score": -0.5359,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "FRRS1",
+        "lineage_median": -0.5252,
+        "global_median": -0.058,
+        "diff_score": -0.4672,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -0.9152,
+        "global_median": -0.461,
+        "diff_score": -0.4542,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "WDR49",
+        "lineage_median": -0.292,
+        "global_median": 0.1389,
+        "diff_score": -0.431,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RPP25L",
+        "lineage_median": -0.6361,
+        "global_median": -0.2341,
+        "diff_score": -0.402,
+        "pLI": 0.0777,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RNF145",
+        "lineage_median": -0.2178,
+        "global_median": 0.1559,
+        "diff_score": -0.3737,
+        "pLI": 0.9999,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SEPHS2",
+        "lineage_median": -0.8886,
+        "global_median": -0.5525,
+        "diff_score": -0.3361,
+        "pLI": 0.006,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "LYNX1",
+        "lineage_median": -0.1363,
+        "global_median": 0.1952,
+        "diff_score": -0.3315,
+        "pLI": 0.0041,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDAN1",
+        "lineage_median": -1.1312,
+        "global_median": -0.8168,
+        "diff_score": -0.3144,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TCP1",
+        "lineage_median": -2.1143,
+        "global_median": -1.835,
+        "diff_score": -0.2794,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TUBB",
+        "lineage_median": -1.9893,
+        "global_median": -1.7177,
+        "diff_score": -0.2716,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CCL15",
+        "lineage_median": -0.2144,
+        "global_median": 0.048,
+        "diff_score": -0.2624,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "JUN",
+        "lineage_median": -0.5053,
+        "global_median": -0.2429,
+        "diff_score": -0.2624,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MSTO1",
+        "lineage_median": -1.1125,
+        "global_median": -0.8565,
+        "diff_score": -0.256,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ZNF626",
+        "lineage_median": -0.0527,
+        "global_median": 0.1992,
+        "diff_score": -0.2519,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "POP7",
+        "lineage_median": -0.9792,
+        "global_median": -0.7302,
+        "diff_score": -0.249,
+        "pLI": 0.0224,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDS2",
+        "lineage_median": -0.5868,
+        "global_median": -0.3418,
+        "diff_score": -0.245,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Ovary/Fallopian Tube": [
+      {
+        "gene": "PAX8",
+        "lineage_median": -0.6646,
+        "global_median": -0.1341,
+        "diff_score": -0.5305,
+        "pLI": 0.9993,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -0.9128,
+        "global_median": -0.461,
+        "diff_score": -0.4517,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CFLAR",
+        "lineage_median": -0.8752,
+        "global_median": -0.5243,
+        "diff_score": -0.3509,
+        "pLI": 0.3968,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EIF1AX",
+        "lineage_median": -2.2579,
+        "global_median": -1.9179,
+        "diff_score": -0.34,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "DNAJC9",
+        "lineage_median": -1.3514,
+        "global_median": -1.0388,
+        "diff_score": -0.3125,
+        "pLI": 0.0009,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PARD6B",
+        "lineage_median": -0.3982,
+        "global_median": -0.0985,
+        "diff_score": -0.2997,
+        "pLI": 0.4026,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SOD2",
+        "lineage_median": -0.8969,
+        "global_median": -0.6179,
+        "diff_score": -0.279,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ATP6V1A",
+        "lineage_median": -2.1523,
+        "global_median": -1.8872,
+        "diff_score": -0.2651,
+        "pLI": 0.9189,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PSMB6",
+        "lineage_median": -1.9872,
+        "global_median": -1.7533,
+        "diff_score": -0.2339,
+        "pLI": 0.0701,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PPP1R15B",
+        "lineage_median": -1.0013,
+        "global_median": -0.7738,
+        "diff_score": -0.2275,
+        "pLI": 0.0002,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RAD9A",
+        "lineage_median": -1.066,
+        "global_median": -0.8439,
+        "diff_score": -0.2222,
+        "pLI": 0.2817,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "COPG1",
+        "lineage_median": -1.5294,
+        "global_median": -1.3173,
+        "diff_score": -0.212,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PARD3",
+        "lineage_median": -0.3034,
+        "global_median": -0.0949,
+        "diff_score": -0.2085,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "STRIP1",
+        "lineage_median": -0.5224,
+        "global_median": -0.3233,
+        "diff_score": -0.1991,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NUS1",
+        "lineage_median": -1.5702,
+        "global_median": -1.3824,
+        "diff_score": -0.1879,
+        "pLI": 0.9994,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "YRDC",
+        "lineage_median": -1.9514,
+        "global_median": -1.7646,
+        "diff_score": -0.1868,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ACO2",
+        "lineage_median": -0.8696,
+        "global_median": -0.6902,
+        "diff_score": -0.1794,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ARHGAP29",
+        "lineage_median": -0.4163,
+        "global_median": -0.2396,
+        "diff_score": -0.1768,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GSPT1",
+        "lineage_median": -1.8774,
+        "global_median": -1.7101,
+        "diff_score": -0.1673,
+        "pLI": 0.848,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ZNF574",
+        "lineage_median": -0.7392,
+        "global_median": -0.5748,
+        "diff_score": -0.1644,
+        "pLI": 0.1461,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Kidney": [
+      {
+        "gene": "HNF1B",
+        "lineage_median": -1.3769,
+        "global_median": -0.2095,
+        "diff_score": -1.1674,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PAX8",
+        "lineage_median": -1.0485,
+        "global_median": -0.1341,
+        "diff_score": -0.9143,
+        "pLI": 0.9993,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CFLAR",
+        "lineage_median": -1.3515,
+        "global_median": -0.5243,
+        "diff_score": -0.8272,
+        "pLI": 0.3968,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -1.2676,
+        "global_median": -0.461,
+        "diff_score": -0.8066,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MDM2",
+        "lineage_median": -1.0988,
+        "global_median": -0.3779,
+        "diff_score": -0.7209,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SEPHS2",
+        "lineage_median": -1.2615,
+        "global_median": -0.5525,
+        "diff_score": -0.709,
+        "pLI": 0.006,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UBC",
+        "lineage_median": -1.0146,
+        "global_median": -0.4029,
+        "diff_score": -0.6117,
+        "pLI": 0.8261,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ITGAV",
+        "lineage_median": -1.0311,
+        "global_median": -0.5359,
+        "diff_score": -0.4952,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PARD6B",
+        "lineage_median": -0.5524,
+        "global_median": -0.0985,
+        "diff_score": -0.454,
+        "pLI": 0.4026,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GRB2",
+        "lineage_median": -1.3462,
+        "global_median": -0.9018,
+        "diff_score": -0.4444,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "BCL2L1",
+        "lineage_median": -1.3127,
+        "global_median": -0.9096,
+        "diff_score": -0.4031,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "COPG1",
+        "lineage_median": -1.7052,
+        "global_median": -1.3173,
+        "diff_score": -0.3878,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "USP7",
+        "lineage_median": -1.1478,
+        "global_median": -0.7674,
+        "diff_score": -0.3804,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "COG3",
+        "lineage_median": -1.2937,
+        "global_median": -0.9239,
+        "diff_score": -0.3698,
+        "pLI": 0.9817,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PTK2",
+        "lineage_median": -0.8577,
+        "global_median": -0.494,
+        "diff_score": -0.3637,
+        "pLI": 0.5286,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CDH2",
+        "lineage_median": -0.4172,
+        "global_median": -0.0593,
+        "diff_score": -0.3579,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ZFP36L1",
+        "lineage_median": -0.5485,
+        "global_median": -0.1921,
+        "diff_score": -0.3564,
+        "pLI": 0.9254,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CRKL",
+        "lineage_median": -1.1464,
+        "global_median": -0.8121,
+        "diff_score": -0.3343,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "WDR73",
+        "lineage_median": -0.8372,
+        "global_median": -0.5098,
+        "diff_score": -0.3274,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "HAPSTR1",
+        "lineage_median": -0.65,
+        "global_median": -0.3453,
+        "diff_score": -0.3047,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Pancreas": [
+      {
+        "gene": "KRAS",
+        "lineage_median": -1.758,
+        "global_median": -0.3732,
+        "diff_score": -1.3848,
+        "pLI": 0.9953,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "EFR3A",
+        "lineage_median": -0.8482,
+        "global_median": -0.3535,
+        "diff_score": -0.4947,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RAB10",
+        "lineage_median": -0.8466,
+        "global_median": -0.3686,
+        "diff_score": -0.4779,
+        "pLI": 0.9518,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CCND1",
+        "lineage_median": -1.2954,
+        "global_median": -0.8446,
+        "diff_score": -0.4508,
+        "pLI": 0.2863,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CFLAR",
+        "lineage_median": -0.9645,
+        "global_median": -0.5243,
+        "diff_score": -0.4403,
+        "pLI": 0.3968,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "DOCK5",
+        "lineage_median": -0.4641,
+        "global_median": -0.0569,
+        "diff_score": -0.4072,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SCAP",
+        "lineage_median": -1.3697,
+        "global_median": -0.9777,
+        "diff_score": -0.392,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RAB6A",
+        "lineage_median": -0.8467,
+        "global_median": -0.4712,
+        "diff_score": -0.3755,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MYH9",
+        "lineage_median": -0.7778,
+        "global_median": -0.4106,
+        "diff_score": -0.3673,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CRKL",
+        "lineage_median": -1.1782,
+        "global_median": -0.8121,
+        "diff_score": -0.3661,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ACO2",
+        "lineage_median": -1.0271,
+        "global_median": -0.6902,
+        "diff_score": -0.3369,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ARHGEF7",
+        "lineage_median": -0.5269,
+        "global_median": -0.1929,
+        "diff_score": -0.334,
+        "pLI": 0.7681,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MYC",
+        "lineage_median": -2.1445,
+        "global_median": -1.8187,
+        "diff_score": -0.3258,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "DBF4",
+        "lineage_median": -1.1417,
+        "global_median": -0.8231,
+        "diff_score": -0.3186,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KLF5",
+        "lineage_median": -0.5409,
+        "global_median": -0.2312,
+        "diff_score": -0.3097,
+        "pLI": 0.9998,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "WNK1",
+        "lineage_median": -1.0912,
+        "global_median": -0.7942,
+        "diff_score": -0.297,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "HSP90B1",
+        "lineage_median": -0.867,
+        "global_median": -0.5838,
+        "diff_score": -0.2832,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "NCKAP1",
+        "lineage_median": -0.7297,
+        "global_median": -0.4486,
+        "diff_score": -0.2811,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PSMG2",
+        "lineage_median": -0.9403,
+        "global_median": -0.668,
+        "diff_score": -0.2723,
+        "pLI": 0.4335,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PKMYT1",
+        "lineage_median": -1.5101,
+        "global_median": -1.2433,
+        "diff_score": -0.2669,
+        "pLI": 0.0003,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Peripheral Nervous System": [
+      {
+        "gene": "CCND1",
+        "lineage_median": -1.6072,
+        "global_median": -0.8446,
+        "diff_score": -0.7626,
+        "pLI": 0.2863,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "IRS2",
+        "lineage_median": -0.8364,
+        "global_median": -0.2497,
+        "diff_score": -0.5867,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ISL1",
+        "lineage_median": -0.6136,
+        "global_median": -0.0544,
+        "diff_score": -0.5592,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "NXT1",
+        "lineage_median": -0.8882,
+        "global_median": -0.3592,
+        "diff_score": -0.529,
+        "pLI": 0.6861,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "LDB1",
+        "lineage_median": -0.6689,
+        "global_median": -0.2135,
+        "diff_score": -0.4554,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SEPHS2",
+        "lineage_median": -0.9848,
+        "global_median": -0.5525,
+        "diff_score": -0.4323,
+        "pLI": 0.006,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDIN1",
+        "lineage_median": -0.7195,
+        "global_median": -0.3286,
+        "diff_score": -0.3909,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MYCN",
+        "lineage_median": -0.508,
+        "global_median": -0.1199,
+        "diff_score": -0.3881,
+        "pLI": 0.9959,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TUBE1",
+        "lineage_median": -0.7764,
+        "global_median": -0.3905,
+        "diff_score": -0.3859,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "HAND2",
+        "lineage_median": -0.2564,
+        "global_median": 0.1129,
+        "diff_score": -0.3692,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FURIN",
+        "lineage_median": -0.5417,
+        "global_median": -0.1746,
+        "diff_score": -0.3671,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "GATA3",
+        "lineage_median": -0.4461,
+        "global_median": -0.0823,
+        "diff_score": -0.3637,
+        "pLI": 0.5422,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "RTTN",
+        "lineage_median": -0.8231,
+        "global_median": -0.4845,
+        "diff_score": -0.3386,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TRA2B",
+        "lineage_median": -0.7987,
+        "global_median": -0.4637,
+        "diff_score": -0.335,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GNB1L",
+        "lineage_median": -0.9001,
+        "global_median": -0.5664,
+        "diff_score": -0.3337,
+        "pLI": 0.0046,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PDAP1",
+        "lineage_median": -1.1125,
+        "global_median": -0.7804,
+        "diff_score": -0.332,
+        "pLI": 0.0523,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDK6",
+        "lineage_median": -0.8361,
+        "global_median": -0.5046,
+        "diff_score": -0.3316,
+        "pLI": 0.9972,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ELOB",
+        "lineage_median": -1.7195,
+        "global_median": -1.3902,
+        "diff_score": -0.3293,
+        "pLI": 0.4403,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "HNRNPH1",
+        "lineage_median": -1.4566,
+        "global_median": -1.1342,
+        "diff_score": -0.3224,
+        "pLI": 0.5627,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "DNAJC9",
+        "lineage_median": -1.3478,
+        "global_median": -1.0388,
+        "diff_score": -0.309,
+        "pLI": 0.0009,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Biliary Tract": [
+      {
+        "gene": "SMG1",
+        "lineage_median": -2.6026,
+        "global_median": -0.9783,
+        "diff_score": -1.6243,
+        "pLI": 0.6832,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PTGES3L",
+        "lineage_median": -0.4614,
+        "global_median": 0.0352,
+        "diff_score": -0.4966,
+        "pLI": 0.0056,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NPM1",
+        "lineage_median": -1.2164,
+        "global_median": -0.7401,
+        "diff_score": -0.4764,
+        "pLI": 0.9821,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "C5orf58",
+        "lineage_median": -0.2635,
+        "global_median": 0.2048,
+        "diff_score": -0.4682,
+        "pLI": 0.3958,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "E2F6",
+        "lineage_median": -0.3156,
+        "global_median": 0.1389,
+        "diff_score": -0.4545,
+        "pLI": 0.0002,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ZSCAN5B",
+        "lineage_median": -0.1835,
+        "global_median": 0.256,
+        "diff_score": -0.4394,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CCND1",
+        "lineage_median": -1.2609,
+        "global_median": -0.8446,
+        "diff_score": -0.4163,
+        "pLI": 0.2863,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SNAP23",
+        "lineage_median": -1.0204,
+        "global_median": -0.6194,
+        "diff_score": -0.401,
+        "pLI": 0.2815,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SCAP",
+        "lineage_median": -1.3514,
+        "global_median": -0.9777,
+        "diff_score": -0.3737,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EEF1A1",
+        "lineage_median": -2.5044,
+        "global_median": -2.1357,
+        "diff_score": -0.3686,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PARVA",
+        "lineage_median": -0.3399,
+        "global_median": 0.0264,
+        "diff_score": -0.3663,
+        "pLI": 0.0268,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ZNF716",
+        "lineage_median": -0.1679,
+        "global_median": 0.1819,
+        "diff_score": -0.3498,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EFR3A",
+        "lineage_median": -0.6993,
+        "global_median": -0.3535,
+        "diff_score": -0.3457,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TRPM7",
+        "lineage_median": -1.0068,
+        "global_median": -0.6696,
+        "diff_score": -0.3372,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ZNF254",
+        "lineage_median": -0.3354,
+        "global_median": -0.0016,
+        "diff_score": -0.3339,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ACO2",
+        "lineage_median": -1.0194,
+        "global_median": -0.6902,
+        "diff_score": -0.3292,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RNF145",
+        "lineage_median": -0.1634,
+        "global_median": 0.1559,
+        "diff_score": -0.3194,
+        "pLI": 0.9999,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ZNF85",
+        "lineage_median": -0.2643,
+        "global_median": 0.0525,
+        "diff_score": -0.3168,
+        "pLI": 0.0002,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ZNF626",
+        "lineage_median": -0.1161,
+        "global_median": 0.1992,
+        "diff_score": -0.3152,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CCL15",
+        "lineage_median": -0.2616,
+        "global_median": 0.048,
+        "diff_score": -0.3096,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Uterus": [
+      {
+        "gene": "PAX8",
+        "lineage_median": -0.5597,
+        "global_median": -0.1341,
+        "diff_score": -0.4256,
+        "pLI": 0.9993,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "BCL2L1",
+        "lineage_median": -1.2193,
+        "global_median": -0.9096,
+        "diff_score": -0.3097,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -0.7587,
+        "global_median": -0.461,
+        "diff_score": -0.2976,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "DDX3X",
+        "lineage_median": -1.2084,
+        "global_median": -0.9364,
+        "diff_score": -0.272,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NDUFB1",
+        "lineage_median": -0.9453,
+        "global_median": -0.6749,
+        "diff_score": -0.2704,
+        "pLI": 0.0014,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RPP25L",
+        "lineage_median": -0.4994,
+        "global_median": -0.2341,
+        "diff_score": -0.2652,
+        "pLI": 0.0777,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SS18L2",
+        "lineage_median": -2.3178,
+        "global_median": -2.0634,
+        "diff_score": -0.2545,
+        "pLI": 0.0346,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KIF11",
+        "lineage_median": -2.8526,
+        "global_median": -2.6082,
+        "diff_score": -0.2444,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "YARS1",
+        "lineage_median": -2.1793,
+        "global_median": -1.9366,
+        "diff_score": -0.2427,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SARS1",
+        "lineage_median": -2.8447,
+        "global_median": -2.6029,
+        "diff_score": -0.2418,
+        "pLI": 0.171,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "C5orf58",
+        "lineage_median": -0.036,
+        "global_median": 0.2048,
+        "diff_score": -0.2408,
+        "pLI": 0.3958,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RBM25",
+        "lineage_median": -1.7123,
+        "global_median": -1.4717,
+        "diff_score": -0.2405,
+        "pLI": 0.9294,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "HMGCS1",
+        "lineage_median": -1.984,
+        "global_median": -1.747,
+        "diff_score": -0.237,
+        "pLI": 0.956,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SYF2",
+        "lineage_median": -1.2133,
+        "global_median": -0.9786,
+        "diff_score": -0.2347,
+        "pLI": 0.0053,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SMG6",
+        "lineage_median": -1.1635,
+        "global_median": -0.935,
+        "diff_score": -0.2285,
+        "pLI": 0.0698,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PARD6B",
+        "lineage_median": -0.3232,
+        "global_median": -0.0985,
+        "diff_score": -0.2247,
+        "pLI": 0.4026,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NANOG",
+        "lineage_median": -0.0629,
+        "global_median": 0.1609,
+        "diff_score": -0.2238,
+        "pLI": 0.9888,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CCNE1",
+        "lineage_median": -0.375,
+        "global_median": -0.1513,
+        "diff_score": -0.2237,
+        "pLI": 0.9993,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PKMYT1",
+        "lineage_median": -1.4605,
+        "global_median": -1.2433,
+        "diff_score": -0.2173,
+        "pLI": 0.0003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDK2",
+        "lineage_median": -0.838,
+        "global_median": -0.6239,
+        "diff_score": -0.214,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Bladder/Urinary Tract": [
+      {
+        "gene": "FAM50A",
+        "lineage_median": -0.8013,
+        "global_median": -0.3461,
+        "diff_score": -0.4552,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SNAP23",
+        "lineage_median": -1.0171,
+        "global_median": -0.6194,
+        "diff_score": -0.3976,
+        "pLI": 0.2815,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "LONP1",
+        "lineage_median": -1.7469,
+        "global_median": -1.3802,
+        "diff_score": -0.3667,
+        "pLI": 0.9914,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "STX4",
+        "lineage_median": -0.6047,
+        "global_median": -0.2529,
+        "diff_score": -0.3518,
+        "pLI": 0.003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EFR3A",
+        "lineage_median": -0.6981,
+        "global_median": -0.3535,
+        "diff_score": -0.3445,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ARHGEF7",
+        "lineage_median": -0.5206,
+        "global_median": -0.1929,
+        "diff_score": -0.3278,
+        "pLI": 0.7681,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CRKL",
+        "lineage_median": -1.1086,
+        "global_median": -0.8121,
+        "diff_score": -0.2965,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RAB6A",
+        "lineage_median": -0.7567,
+        "global_median": -0.4712,
+        "diff_score": -0.2855,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TOE1",
+        "lineage_median": -0.7635,
+        "global_median": -0.4787,
+        "diff_score": -0.2847,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "DYNLRB1",
+        "lineage_median": -2.0422,
+        "global_median": -1.7582,
+        "diff_score": -0.2841,
+        "pLI": 0.0009,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UBE2N",
+        "lineage_median": -1.3662,
+        "global_median": -1.0894,
+        "diff_score": -0.2769,
+        "pLI": 0.9694,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CFLAR",
+        "lineage_median": -0.8,
+        "global_median": -0.5243,
+        "diff_score": -0.2758,
+        "pLI": 0.3968,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KIF18A",
+        "lineage_median": -1.5285,
+        "global_median": -1.2606,
+        "diff_score": -0.2679,
+        "pLI": 0.0009,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ACTB",
+        "lineage_median": -0.8251,
+        "global_median": -0.5687,
+        "diff_score": -0.2563,
+        "pLI": 0.995,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PFDN1",
+        "lineage_median": -0.8506,
+        "global_median": -0.5973,
+        "diff_score": -0.2534,
+        "pLI": 0.0855,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GRB2",
+        "lineage_median": -1.1436,
+        "global_median": -0.9018,
+        "diff_score": -0.2418,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MSTO1",
+        "lineage_median": -1.0951,
+        "global_median": -0.8565,
+        "diff_score": -0.2385,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "AK6",
+        "lineage_median": -1.3144,
+        "global_median": -1.0776,
+        "diff_score": -0.2369,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TP63",
+        "lineage_median": -0.1932,
+        "global_median": 0.0369,
+        "diff_score": -0.2302,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MYH9",
+        "lineage_median": -0.6342,
+        "global_median": -0.4106,
+        "diff_score": -0.2236,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      }
+    ],
+    "Pleura": [
+      {
+        "gene": "RRN3",
+        "lineage_median": -3.0058,
+        "global_median": -1.9818,
+        "diff_score": -1.024,
+        "pLI": 0.0037,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SMG1",
+        "lineage_median": -1.8293,
+        "global_median": -0.9783,
+        "diff_score": -0.851,
+        "pLI": 0.6832,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MDM2",
+        "lineage_median": -1.1542,
+        "global_median": -0.3779,
+        "diff_score": -0.7763,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FGFR1",
+        "lineage_median": -0.757,
+        "global_median": -0.0338,
+        "diff_score": -0.7232,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -1.0074,
+        "global_median": -0.461,
+        "diff_score": -0.5463,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SNAP23",
+        "lineage_median": -1.127,
+        "global_median": -0.6194,
+        "diff_score": -0.5076,
+        "pLI": 0.2815,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ZC3H11A",
+        "lineage_median": -0.5608,
+        "global_median": -0.0835,
+        "diff_score": -0.4773,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CFLAR",
+        "lineage_median": -0.9807,
+        "global_median": -0.5243,
+        "diff_score": -0.4564,
+        "pLI": 0.3968,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UBE2D3",
+        "lineage_median": -1.1058,
+        "global_median": -0.6687,
+        "diff_score": -0.4371,
+        "pLI": 0.9946,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "UBIAD1",
+        "lineage_median": -0.8161,
+        "global_median": -0.395,
+        "diff_score": -0.4211,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ETNK1",
+        "lineage_median": -0.4512,
+        "global_median": -0.038,
+        "diff_score": -0.4132,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ELMO2",
+        "lineage_median": -0.4545,
+        "global_median": -0.0605,
+        "diff_score": -0.394,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EAF1",
+        "lineage_median": -0.7539,
+        "global_median": -0.3699,
+        "diff_score": -0.3839,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "AHCYL1",
+        "lineage_median": -0.7204,
+        "global_median": -0.3421,
+        "diff_score": -0.3783,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ZNF732",
+        "lineage_median": -0.212,
+        "global_median": 0.1653,
+        "diff_score": -0.3773,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ALPK3",
+        "lineage_median": -0.5356,
+        "global_median": -0.1674,
+        "diff_score": -0.3682,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NPM1",
+        "lineage_median": -1.1063,
+        "global_median": -0.7401,
+        "diff_score": -0.3662,
+        "pLI": 0.9821,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "WDR70",
+        "lineage_median": -1.6909,
+        "global_median": -1.3358,
+        "diff_score": -0.3551,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ITGAV",
+        "lineage_median": -0.8877,
+        "global_median": -0.5359,
+        "diff_score": -0.3518,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RWDD4",
+        "lineage_median": -0.4007,
+        "global_median": -0.0525,
+        "diff_score": -0.3481,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Liver": [
+      {
+        "gene": "CCND1",
+        "lineage_median": -1.5477,
+        "global_median": -0.8446,
+        "diff_score": -0.7031,
+        "pLI": 0.2863,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "INTS6",
+        "lineage_median": -1.2864,
+        "global_median": -0.7199,
+        "diff_score": -0.5665,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PTK2",
+        "lineage_median": -1.0539,
+        "global_median": -0.494,
+        "diff_score": -0.5599,
+        "pLI": 0.5286,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "GRB2",
+        "lineage_median": -1.4492,
+        "global_median": -0.9018,
+        "diff_score": -0.5474,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ITGAV",
+        "lineage_median": -1.0092,
+        "global_median": -0.5359,
+        "diff_score": -0.4733,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "BCL2L1",
+        "lineage_median": -1.2551,
+        "global_median": -0.9096,
+        "diff_score": -0.3455,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TUBB",
+        "lineage_median": -2.0565,
+        "global_median": -1.7177,
+        "diff_score": -0.3388,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ACTB",
+        "lineage_median": -0.9023,
+        "global_median": -0.5687,
+        "diff_score": -0.3336,
+        "pLI": 0.995,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ARF4",
+        "lineage_median": -0.9391,
+        "global_median": -0.6219,
+        "diff_score": -0.3173,
+        "pLI": 0.9615,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "UFM1",
+        "lineage_median": -0.7643,
+        "global_median": -0.4517,
+        "diff_score": -0.3126,
+        "pLI": 0.6046,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PSMB5",
+        "lineage_median": -2.0851,
+        "global_median": -1.7774,
+        "diff_score": -0.3077,
+        "pLI": 0.996,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ELMO2",
+        "lineage_median": -0.3638,
+        "global_median": -0.0605,
+        "diff_score": -0.3033,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -0.7532,
+        "global_median": -0.461,
+        "diff_score": -0.2922,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "FAF2",
+        "lineage_median": -0.6839,
+        "global_median": -0.4142,
+        "diff_score": -0.2697,
+        "pLI": 0.4473,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "AHCYL1",
+        "lineage_median": -0.6114,
+        "global_median": -0.3421,
+        "diff_score": -0.2693,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ARPC4",
+        "lineage_median": -0.9196,
+        "global_median": -0.6539,
+        "diff_score": -0.2656,
+        "pLI": 0.974,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ARHGEF7",
+        "lineage_median": -0.4579,
+        "global_median": -0.1929,
+        "diff_score": -0.2651,
+        "pLI": 0.7681,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "KIF18A",
+        "lineage_median": -1.5227,
+        "global_median": -1.2606,
+        "diff_score": -0.2621,
+        "pLI": 0.0009,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "XYLT2",
+        "lineage_median": -0.5199,
+        "global_median": -0.2589,
+        "diff_score": -0.2611,
+        "pLI": 0.0215,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "THAP1",
+        "lineage_median": -1.4339,
+        "global_median": -1.1739,
+        "diff_score": -0.2599,
+        "pLI": 0.484,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Thyroid": [
+      {
+        "gene": "NHLRC2",
+        "lineage_median": -1.3549,
+        "global_median": -0.6139,
+        "diff_score": -0.741,
+        "pLI": 0.0387,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ITGAV",
+        "lineage_median": -1.1266,
+        "global_median": -0.5359,
+        "diff_score": -0.5907,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -1.0365,
+        "global_median": -0.461,
+        "diff_score": -0.5755,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PRKRA",
+        "lineage_median": -1.1027,
+        "global_median": -0.5509,
+        "diff_score": -0.5518,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "GPI",
+        "lineage_median": -0.8745,
+        "global_median": -0.4143,
+        "diff_score": -0.4602,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "YARS2",
+        "lineage_median": -1.5953,
+        "global_median": -1.1664,
+        "diff_score": -0.4289,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ELMO2",
+        "lineage_median": -0.4554,
+        "global_median": -0.0605,
+        "diff_score": -0.3949,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EIF3B",
+        "lineage_median": -2.1513,
+        "global_median": -1.7565,
+        "diff_score": -0.3948,
+        "pLI": 0.9999,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "WDR73",
+        "lineage_median": -0.9043,
+        "global_median": -0.5098,
+        "diff_score": -0.3944,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "HDAC3",
+        "lineage_median": -1.325,
+        "global_median": -0.9341,
+        "diff_score": -0.3909,
+        "pLI": 0.5635,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ACTR1A",
+        "lineage_median": -1.0741,
+        "global_median": -0.6868,
+        "diff_score": -0.3873,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UBIAD1",
+        "lineage_median": -0.7774,
+        "global_median": -0.395,
+        "diff_score": -0.3825,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "HNRNPH1",
+        "lineage_median": -1.5113,
+        "global_median": -1.1342,
+        "diff_score": -0.3771,
+        "pLI": 0.5627,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CCND1",
+        "lineage_median": -1.218,
+        "global_median": -0.8446,
+        "diff_score": -0.3734,
+        "pLI": 0.2863,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CBFB",
+        "lineage_median": -0.5332,
+        "global_median": -0.1654,
+        "diff_score": -0.3679,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EFR3A",
+        "lineage_median": -0.7135,
+        "global_median": -0.3535,
+        "diff_score": -0.36,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TRA2B",
+        "lineage_median": -0.822,
+        "global_median": -0.4637,
+        "diff_score": -0.3583,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "AK6",
+        "lineage_median": -1.4354,
+        "global_median": -1.0776,
+        "diff_score": -0.3579,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDC42",
+        "lineage_median": -1.3989,
+        "global_median": -1.0502,
+        "diff_score": -0.3487,
+        "pLI": 0.7562,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CFLAR",
+        "lineage_median": -0.8666,
+        "global_median": -0.5243,
+        "diff_score": -0.3423,
+        "pLI": 0.3968,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Cervix": [
+      {
+        "gene": "ZER1",
+        "lineage_median": -0.8319,
+        "global_median": -0.004,
+        "diff_score": -0.8278,
+        "pLI": 0.8874,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SKP2",
+        "lineage_median": -1.3706,
+        "global_median": -0.5763,
+        "diff_score": -0.7943,
+        "pLI": 0.263,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "UBE3A",
+        "lineage_median": -0.7458,
+        "global_median": -0.0646,
+        "diff_score": -0.6811,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CKS1B",
+        "lineage_median": -1.2342,
+        "global_median": -0.6751,
+        "diff_score": -0.5591,
+        "pLI": 0.5672,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ELOB",
+        "lineage_median": -1.8891,
+        "global_median": -1.3902,
+        "diff_score": -0.4989,
+        "pLI": 0.4403,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CUL2",
+        "lineage_median": -0.9888,
+        "global_median": -0.5296,
+        "diff_score": -0.4592,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KLF5",
+        "lineage_median": -0.6112,
+        "global_median": -0.2312,
+        "diff_score": -0.3799,
+        "pLI": 0.9998,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "YRDC",
+        "lineage_median": -2.1401,
+        "global_median": -1.7646,
+        "diff_score": -0.3755,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MAGOH",
+        "lineage_median": -1.2836,
+        "global_median": -0.9174,
+        "diff_score": -0.3662,
+        "pLI": 0.9834,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "NUF2",
+        "lineage_median": -2.0531,
+        "global_median": -1.6987,
+        "diff_score": -0.3544,
+        "pLI": 0.2696,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ELOC",
+        "lineage_median": -1.5745,
+        "global_median": -1.2323,
+        "diff_score": -0.3422,
+        "pLI": 0.973,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CHMP6",
+        "lineage_median": -1.9092,
+        "global_median": -1.5829,
+        "diff_score": -0.3263,
+        "pLI": 0.3668,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "HNRNPK",
+        "lineage_median": -2.6652,
+        "global_median": -2.3449,
+        "diff_score": -0.3203,
+        "pLI": 0.9792,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "STX4",
+        "lineage_median": -0.5721,
+        "global_median": -0.2529,
+        "diff_score": -0.3192,
+        "pLI": 0.003,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "DDX39B",
+        "lineage_median": -1.0283,
+        "global_median": -0.7146,
+        "diff_score": -0.3138,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RNPC3",
+        "lineage_median": -1.9111,
+        "global_median": -1.5981,
+        "diff_score": -0.313,
+        "pLI": 0.001,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "KCTD10",
+        "lineage_median": -0.5157,
+        "global_median": -0.216,
+        "diff_score": -0.2998,
+        "pLI": 0.7358,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ALG1",
+        "lineage_median": -1.0939,
+        "global_median": -0.7967,
+        "diff_score": -0.2972,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TFDP1",
+        "lineage_median": -0.7214,
+        "global_median": -0.4259,
+        "diff_score": -0.2954,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "HSPA5",
+        "lineage_median": -1.51,
+        "global_median": -1.217,
+        "diff_score": -0.293,
+        "pLI": 0.9273,
+        "dep_type": "oncogene-driven"
+      }
+    ],
+    "Eye": [
+      {
+        "gene": "MDM2",
+        "lineage_median": -1.451,
+        "global_median": -0.3779,
+        "diff_score": -1.0732,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PPM1G",
+        "lineage_median": -1.0506,
+        "global_median": -0.2413,
+        "diff_score": -0.8093,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MDM4",
+        "lineage_median": -0.7771,
+        "global_median": -0.0967,
+        "diff_score": -0.6804,
+        "pLI": 0.9975,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CDK4",
+        "lineage_median": -1.2512,
+        "global_median": -0.6177,
+        "diff_score": -0.6335,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CCND1",
+        "lineage_median": -1.4738,
+        "global_median": -0.8446,
+        "diff_score": -0.6292,
+        "pLI": 0.2863,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RIC8A",
+        "lineage_median": -0.555,
+        "global_median": 0.0466,
+        "diff_score": -0.6015,
+        "pLI": 0.0058,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ITGB5",
+        "lineage_median": -0.7849,
+        "global_median": -0.2299,
+        "diff_score": -0.555,
+        "pLI": 0.2681,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "INTS6",
+        "lineage_median": -1.2633,
+        "global_median": -0.7199,
+        "diff_score": -0.5435,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "FAM50A",
+        "lineage_median": -0.8722,
+        "global_median": -0.3461,
+        "diff_score": -0.5261,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "HEATR1",
+        "lineage_median": -2.2084,
+        "global_median": -1.6922,
+        "diff_score": -0.5162,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "RPP25L",
+        "lineage_median": -0.7332,
+        "global_median": -0.2341,
+        "diff_score": -0.4991,
+        "pLI": 0.0777,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FERMT2",
+        "lineage_median": -0.9548,
+        "global_median": -0.461,
+        "diff_score": -0.4937,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "USP7",
+        "lineage_median": -1.2475,
+        "global_median": -0.7674,
+        "diff_score": -0.48,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MED1",
+        "lineage_median": -1.0977,
+        "global_median": -0.6278,
+        "diff_score": -0.4699,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PSMB6",
+        "lineage_median": -2.203,
+        "global_median": -1.7533,
+        "diff_score": -0.4497,
+        "pLI": 0.0701,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "EAF1",
+        "lineage_median": -0.7928,
+        "global_median": -0.3699,
+        "diff_score": -0.4228,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PHF12",
+        "lineage_median": -0.8497,
+        "global_median": -0.4494,
+        "diff_score": -0.4002,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FAM98B",
+        "lineage_median": -0.6691,
+        "global_median": -0.2704,
+        "diff_score": -0.3986,
+        "pLI": 0.0042,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDAN1",
+        "lineage_median": -1.2078,
+        "global_median": -0.8168,
+        "diff_score": -0.391,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TXNRD1",
+        "lineage_median": -0.8429,
+        "global_median": -0.4577,
+        "diff_score": -0.3852,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      }
+    ],
+    "Prostate": [
+      {
+        "gene": "EGFR",
+        "lineage_median": -0.9214,
+        "global_median": -0.1888,
+        "diff_score": -0.7325,
+        "pLI": 0.4073,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ITGB1",
+        "lineage_median": -0.6852,
+        "global_median": -0.1514,
+        "diff_score": -0.5338,
+        "pLI": 0.9998,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "KIF11",
+        "lineage_median": -3.1068,
+        "global_median": -2.6082,
+        "diff_score": -0.4986,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "LCE1F",
+        "lineage_median": -1.3314,
+        "global_median": -0.8484,
+        "diff_score": -0.4831,
+        "pLI": 0.0024,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MED24",
+        "lineage_median": -0.8241,
+        "global_median": -0.3713,
+        "diff_score": -0.4528,
+        "pLI": 0.0207,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "STAMBP",
+        "lineage_median": -0.737,
+        "global_median": -0.3175,
+        "diff_score": -0.4196,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ATP1A1",
+        "lineage_median": -1.4935,
+        "global_median": -1.075,
+        "diff_score": -0.4186,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "MED12",
+        "lineage_median": -0.9744,
+        "global_median": -0.5573,
+        "diff_score": -0.4172,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MAGOH",
+        "lineage_median": -1.3282,
+        "global_median": -0.9174,
+        "diff_score": -0.4108,
+        "pLI": 0.9834,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "CTPS1",
+        "lineage_median": -0.9839,
+        "global_median": -0.5752,
+        "diff_score": -0.4087,
+        "pLI": 0.9997,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TOE1",
+        "lineage_median": -0.8687,
+        "global_median": -0.4787,
+        "diff_score": -0.39,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MED1",
+        "lineage_median": -1.0027,
+        "global_median": -0.6278,
+        "diff_score": -0.3749,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RBM42",
+        "lineage_median": -0.9007,
+        "global_median": -0.5505,
+        "diff_score": -0.3503,
+        "pLI": 0.0028,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "RNPC3",
+        "lineage_median": -1.9343,
+        "global_median": -1.5981,
+        "diff_score": -0.3362,
+        "pLI": 0.001,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NIP7",
+        "lineage_median": -2.3258,
+        "global_median": -1.9933,
+        "diff_score": -0.3326,
+        "pLI": 0.8449,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "UMPS",
+        "lineage_median": -0.5687,
+        "global_median": -0.2386,
+        "diff_score": -0.3301,
+        "pLI": 0.2219,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TIMM23",
+        "lineage_median": -1.2332,
+        "global_median": -0.9062,
+        "diff_score": -0.3269,
+        "pLI": 0.0141,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "TSG101",
+        "lineage_median": -1.455,
+        "global_median": -1.1327,
+        "diff_score": -0.3222,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MYBL2",
+        "lineage_median": -0.7702,
+        "global_median": -0.4485,
+        "diff_score": -0.3217,
+        "pLI": 0.7747,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "USP7",
+        "lineage_median": -1.0858,
+        "global_median": -0.7674,
+        "diff_score": -0.3183,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      }
+    ],
+    "Testis": [
+      {
+        "gene": "SMG1",
+        "lineage_median": -1.8307,
+        "global_median": -0.9783,
+        "diff_score": -0.8524,
+        "pLI": 0.6832,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TIMM50",
+        "lineage_median": -0.9843,
+        "global_median": -0.3834,
+        "diff_score": -0.6009,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "FOXD4",
+        "lineage_median": -1.4941,
+        "global_median": -0.8977,
+        "diff_score": -0.5964,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "SEPSECS",
+        "lineage_median": -1.0217,
+        "global_median": -0.4594,
+        "diff_score": -0.5623,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MDM2",
+        "lineage_median": -0.8903,
+        "global_median": -0.3779,
+        "diff_score": -0.5125,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PKD1",
+        "lineage_median": -0.286,
+        "global_median": 0.1756,
+        "diff_score": -0.4616,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MCL1",
+        "lineage_median": -1.1359,
+        "global_median": -0.6764,
+        "diff_score": -0.4595,
+        "pLI": 0.9983,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "RPUSD4",
+        "lineage_median": -0.7576,
+        "global_median": -0.3081,
+        "diff_score": -0.4496,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "VBP1",
+        "lineage_median": -1.018,
+        "global_median": -0.5785,
+        "diff_score": -0.4395,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "MRPL4",
+        "lineage_median": -1.0302,
+        "global_median": -0.6046,
+        "diff_score": -0.4256,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "PARVA",
+        "lineage_median": -0.3959,
+        "global_median": 0.0264,
+        "diff_score": -0.4223,
+        "pLI": 0.0268,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "LSM4",
+        "lineage_median": -2.1935,
+        "global_median": -1.7772,
+        "diff_score": -0.4164,
+        "pLI": null,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "NMT1",
+        "lineage_median": -1.12,
+        "global_median": -0.7079,
+        "diff_score": -0.4121,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "PELO",
+        "lineage_median": -1.1788,
+        "global_median": -0.767,
+        "diff_score": -0.4118,
+        "pLI": 0.0,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "CDC25A",
+        "lineage_median": -0.6743,
+        "global_median": -0.2625,
+        "diff_score": -0.4118,
+        "pLI": 0.6314,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "SRRM2",
+        "lineage_median": -0.9207,
+        "global_median": -0.5124,
+        "diff_score": -0.4083,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "ZC3H11A",
+        "lineage_median": -0.4848,
+        "global_median": -0.0835,
+        "diff_score": -0.4012,
+        "pLI": 1.0,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "USP5",
+        "lineage_median": -1.7639,
+        "global_median": -1.3644,
+        "diff_score": -0.3994,
+        "pLI": 0.6596,
+        "dep_type": "oncogene-driven"
+      },
+      {
+        "gene": "TBCC",
+        "lineage_median": -1.213,
+        "global_median": -0.8183,
+        "diff_score": -0.3947,
+        "pLI": 0.0094,
+        "dep_type": "housekeeping"
+      },
+      {
+        "gene": "ERAL1",
+        "lineage_median": -0.7576,
+        "global_median": -0.3675,
+        "diff_score": -0.3901,
+        "pLI": 0.0006,
+        "dep_type": "housekeeping"
+      }
+    ]
+  },
+  "validation": {
+    "validations": [
+      {
+        "lineage": "Lung",
+        "dar": 0.3,
+        "predicted": "harmful",
+        "observed_hr": 1.289,
+        "observed_direction": "harmful",
+        "finding_ref": "F01 LUAD Early",
+        "correct": true
+      },
+      {
+        "lineage": "Skin",
+        "dar": 0.3,
+        "predicted": "harmful",
+        "observed_hr": null,
+        "observed_direction": "protective",
+        "finding_ref": "Expected (BRAF)",
+        "correct": false
+      },
+      {
+        "lineage": "Breast",
+        "dar": 0.35,
+        "predicted": "harmful",
+        "observed_hr": 0.813,
+        "observed_direction": "protective",
+        "finding_ref": "F01 BRCA Early",
+        "correct": false
+      },
+      {
+        "lineage": "Myeloid",
+        "dar": 0.3,
+        "predicted": "harmful",
+        "observed_hr": null,
+        "observed_direction": "protective",
+        "finding_ref": "Expected (MYB/ABL1)",
+        "correct": false
+      },
+      {
+        "lineage": "Kidney",
+        "dar": 0.45,
+        "predicted": "harmful",
+        "observed_hr": 0.872,
+        "observed_direction": "protective",
+        "finding_ref": "F01 KIRC Adv",
+        "correct": false
+      }
+    ],
+    "correct": 1,
+    "total": 5,
+    "accuracy": 0.2
+  },
+  "scientific_principle": "Dependency Architecture Principle (Finding_07, v2): NV-Score predicts favorable survival (HR<1) in cancer types whose cancer-SPECIFIC dependencies are dominated by high-pLI (constrained) genes. In cancers where specific dependencies are low-pLI (housekeeping/bypassable), NV-Score reflects proliferation and predicts worse survival (HR>1)."
+}
