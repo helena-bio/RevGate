@@ -1,0 +1,60 @@
+2026-03-11 12:56:32,255 [INFO] Зареждане на данни...
+2026-03-11 12:56:32,323 [INFO]   Cohort: n=1979, events=1143
+2026-03-11 12:56:32,323 [INFO]   Treatment groups:
+2026-03-11 12:56:32,324 [INFO]     HT_only: n=1025, events=622
+2026-03-11 12:56:32,324 [INFO]     Neither: n=542, events=298
+2026-03-11 12:56:32,325 [INFO]     Chemo_only: n=221, events=128
+2026-03-11 12:56:32,325 [INFO]     HT+Chemo: n=191, events=95
+2026-03-11 12:56:32,325 [INFO]   ER+: 1498, ER-: 439
+2026-03-11 12:56:32,325 [INFO]   Subtypes: {'LumA': 700, 'LumB': 475, 'Her2': 224, 'claudin-low': 217, 'Basal': 209, 'Normal': 148}
+2026-03-11 12:56:32,325 [INFO] ============================================================
+2026-03-11 12:56:32,325 [INFO] ANALYSIS 1: Primary Interaction Test
+2026-03-11 12:56:32,326 [INFO]   Model: OS ~ NV + HT + NV×HT + age
+2026-03-11 12:56:32,326 [INFO] ============================================================
+2026-03-11 12:56:32,426 [INFO]   NV main effect:   HR=0.9121, p=0.026783
+2026-03-11 12:56:32,426 [INFO]   HT main effect:   HR=1.0736, p=0.281118
+2026-03-11 12:56:32,426 [INFO]   NV×HT interaction: HR=1.0982, p=0.127996
+2026-03-11 12:56:32,426 [INFO]   n=1979, events=1143, C=0.5911
+2026-03-11 12:56:32,426 [INFO]   ○ Interaction not significant — NV-Score is prognostic only
+2026-03-11 12:56:32,426 [INFO] 
+ANALYSIS 2: Chemotherapy Interaction Test
+2026-03-11 12:56:32,526 [INFO]   NV×Chemo interaction: HR=0.9244, p=0.233304
+2026-03-11 12:56:32,526 [INFO] 
+ANALYSIS 3: Treatment-Stratified Cox
+2026-03-11 12:56:32,526 [INFO]   HR per treatment group (NV-Score → OS)
+2026-03-11 12:56:32,580 [INFO]   HT_only     : HR=1.0334 [0.9319–1.1460] p=0.5335 n=1025 ○
+2026-03-11 12:56:32,603 [INFO]   Chemo_only  : HR=1.0589 [0.8944–1.2538] p=0.5064 n=221 ○
+2026-03-11 12:56:32,625 [INFO]   HT+Chemo    : HR=0.9282 [0.7566–1.1389] p=0.4755 n=191 ○
+2026-03-11 12:56:32,659 [INFO]   Neither     : HR=1.0030 [0.8986–1.1197] p=0.9568 n=542 ○
+2026-03-11 12:56:32,659 [INFO] 
+ANALYSIS 4: PAM50 Subtype × Restricted Follow-up
+2026-03-11 12:56:32,679 [INFO]   LumA          36mo: HR=1.7843 [0.9395–3.3888] p=0.0769 ~
+2026-03-11 12:56:32,705 [INFO]   LumA          60mo: HR=1.3366 [0.8714–2.0501] p=0.1837 ○
+2026-03-11 12:56:32,734 [INFO]   LumA          84mo: HR=1.1573 [0.8229–1.6278] p=0.4011 ○
+2026-03-11 12:56:32,757 [INFO]   LumB          36mo: HR=1.0820 [0.5970–1.9612] p=0.7951 ○
+2026-03-11 12:56:32,782 [INFO]   LumB          60mo: HR=0.8199 [0.5670–1.1856] p=0.2914 ○
+2026-03-11 12:56:32,810 [INFO]   LumB          84mo: HR=0.8159 [0.5948–1.1193] p=0.2072 ○
+2026-03-11 12:56:32,830 [INFO]   Her2          36mo: HR=0.9841 [0.6743–1.4363] p=0.9340 ○
+2026-03-11 12:56:32,851 [INFO]   Her2          60mo: HR=0.9616 [0.7249–1.2757] p=0.7862 ○
+2026-03-11 12:56:32,873 [INFO]   Her2          84mo: HR=0.9548 [0.7350–1.2404] p=0.7292 ○
+2026-03-11 12:56:32,893 [INFO]   Basal         36mo: HR=0.9758 [0.7588–1.2548] p=0.8485 ○
+2026-03-11 12:56:32,914 [INFO]   Basal         60mo: HR=0.9519 [0.7694–1.1778] p=0.6503 ○
+2026-03-11 12:56:32,936 [INFO]   Basal         84mo: HR=0.9075 [0.7415–1.1105] p=0.3459 ○
+2026-03-11 12:56:32,955 [INFO]   claudin-low   36mo: HR=0.9275 [0.6444–1.3349] p=0.6852 ○
+2026-03-11 12:56:32,974 [INFO]   claudin-low   60mo: HR=0.9858 [0.7270–1.3366] p=0.9265 ○
+2026-03-11 12:56:32,993 [INFO]   claudin-low   84mo: HR=0.9951 [0.7636–1.2969] p=0.9712 ○
+2026-03-11 12:56:32,993 [INFO] 
+ANALYSIS 5: ER-Stratified Interaction Test
+2026-03-11 12:56:33,073 [INFO]   ER+: NV×HT HR=0.9954, p=0.963870, n=1498
+2026-03-11 12:56:33,109 [INFO]   ER-: NV×HT HR=0.9307, p=0.629529, n=439
+2026-03-11 12:56:33,109 [INFO] 
+ANALYSIS 6: Restricted Follow-up Interaction
+2026-03-11 12:56:33,169 [INFO]    36mo: NV HR=0.7094, NV×HT HR=1.0545, int_p=0.648074 ○  (n=1979, events=223)
+2026-03-11 12:56:33,237 [INFO]    48mo: NV HR=0.7244, NV×HT HR=1.0998, int_p=0.336919 ○  (n=1979, events=337)
+2026-03-11 12:56:33,300 [INFO]    60mo: NV HR=0.7647, NV×HT HR=1.1133, int_p=0.240895 ○  (n=1979, events=427)
+2026-03-11 12:56:33,370 [INFO]    84mo: NV HR=0.7815, NV×HT HR=1.1234, int_p=0.155770 ○  (n=1979, events=554)
+2026-03-11 12:56:33,450 [INFO]   120mo: NV HR=0.8398, NV×HT HR=1.1020, int_p=0.182449 ○  (n=1979, events=760)
+2026-03-11 12:56:34,570 [INFO] Фигура: results/interaction_treatment.png
+2026-03-11 12:56:34,571 [INFO] JSON: results/interaction_treatment_results.json
+2026-03-11 12:56:34,572 [INFO] CSV: results/interaction_treatment_summary.csv
+2026-03-11 12:56:34,572 [INFO] Finding 11 завършен.

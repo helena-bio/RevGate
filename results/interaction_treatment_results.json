@@ -1,0 +1,384 @@
+{
+  "timestamp": "2026-03-11T12:56:34.571172",
+  "finding": "Finding_11",
+  "description": "NV-Score × Treatment Interaction Test",
+  "cohort": "METABRIC (cBioPortal brca_metabric)",
+  "primary_interaction_hormone_therapy": {
+    "label": "NV × Hormone Therapy (adjusted for age)",
+    "n": 1979,
+    "events": 1143,
+    "concordance": 0.5911,
+    "nv_zscore_hr": 0.9121,
+    "nv_zscore_ci_low": 0.8408,
+    "nv_zscore_ci_high": 0.9895,
+    "nv_zscore_p": 0.026783,
+    "nv_zscore_coef": -0.092,
+    "hormone_therapy_hr": 1.0736,
+    "hormone_therapy_ci_low": 0.9436,
+    "hormone_therapy_ci_high": 1.2215,
+    "hormone_therapy_p": 0.281118,
+    "hormone_therapy_coef": 0.071,
+    "nv_x_treatment_hr": 1.0982,
+    "nv_x_treatment_ci_low": 0.9734,
+    "nv_x_treatment_ci_high": 1.2391,
+    "nv_x_treatment_p": 0.127996,
+    "nv_x_treatment_coef": 0.0937
+  },
+  "secondary_interaction_chemotherapy": {
+    "label": "NV × Chemotherapy (adjusted for age)",
+    "n": 1979,
+    "events": 1143,
+    "concordance": 0.6242,
+    "nv_zscore_hr": 1.0334,
+    "nv_zscore_ci_low": 0.9609,
+    "nv_zscore_ci_high": 1.1114,
+    "nv_zscore_p": 0.375653,
+    "nv_zscore_coef": 0.0329,
+    "chemotherapy_hr": 2.2235,
+    "chemotherapy_ci_low": 1.8652,
+    "chemotherapy_ci_high": 2.6507,
+    "chemotherapy_p": 0.0,
+    "chemotherapy_coef": 0.7991,
+    "nv_x_treatment_hr": 0.9244,
+    "nv_x_treatment_ci_low": 0.8124,
+    "nv_x_treatment_ci_high": 1.0519,
+    "nv_x_treatment_p": 0.233304,
+    "nv_x_treatment_coef": -0.0786
+  },
+  "treatment_stratified_cox": {
+    "HT_only": {
+      "label": "Treatment: HT_only",
+      "n": 1025,
+      "events": 622,
+      "hr": 1.0334,
+      "ci_low": 0.9319,
+      "ci_high": 1.146,
+      "p": 0.533454
+    },
+    "Chemo_only": {
+      "label": "Treatment: Chemo_only",
+      "n": 221,
+      "events": 128,
+      "hr": 1.0589,
+      "ci_low": 0.8944,
+      "ci_high": 1.2538,
+      "p": 0.506355
+    },
+    "HT+Chemo": {
+      "label": "Treatment: HT+Chemo",
+      "n": 191,
+      "events": 95,
+      "hr": 0.9282,
+      "ci_low": 0.7566,
+      "ci_high": 1.1389,
+      "p": 0.475513
+    },
+    "Neither": {
+      "label": "Treatment: Neither",
+      "n": 542,
+      "events": 298,
+      "hr": 1.003,
+      "ci_low": 0.8986,
+      "ci_high": 1.1197,
+      "p": 0.956769
+    }
+  },
+  "pam50_subtype_restricted_followup": {
+    "LumA": {
+      "36mo": {
+        "label": "LumA 36mo",
+        "n": 700,
+        "events": 37,
+        "hr": 1.7843,
+        "ci_low": 0.9395,
+        "ci_high": 3.3888,
+        "p": 0.076872
+      },
+      "60mo": {
+        "label": "LumA 60mo",
+        "n": 700,
+        "events": 86,
+        "hr": 1.3366,
+        "ci_low": 0.8714,
+        "ci_high": 2.0501,
+        "p": 0.183733
+      },
+      "84mo": {
+        "label": "LumA 84mo",
+        "n": 700,
+        "events": 127,
+        "hr": 1.1573,
+        "ci_low": 0.8229,
+        "ci_high": 1.6278,
+        "p": 0.401056
+      }
+    },
+    "LumB": {
+      "36mo": {
+        "label": "LumB 36mo",
+        "n": 475,
+        "events": 44,
+        "hr": 1.082,
+        "ci_low": 0.597,
+        "ci_high": 1.9612,
+        "p": 0.795073
+      },
+      "60mo": {
+        "label": "LumB 60mo",
+        "n": 475,
+        "events": 114,
+        "hr": 0.8199,
+        "ci_low": 0.567,
+        "ci_high": 1.1856,
+        "p": 0.291407
+      },
+      "84mo": {
+        "label": "LumB 84mo",
+        "n": 475,
+        "events": 156,
+        "hr": 0.8159,
+        "ci_low": 0.5948,
+        "ci_high": 1.1193,
+        "p": 0.207247
+      }
+    },
+    "Her2": {
+      "36mo": {
+        "label": "Her2 36mo",
+        "n": 224,
+        "events": 43,
+        "hr": 0.9841,
+        "ci_low": 0.6743,
+        "ci_high": 1.4363,
+        "p": 0.933963
+      },
+      "60mo": {
+        "label": "Her2 60mo",
+        "n": 224,
+        "events": 77,
+        "hr": 0.9616,
+        "ci_low": 0.7249,
+        "ci_high": 1.2757,
+        "p": 0.78621
+      },
+      "84mo": {
+        "label": "Her2 84mo",
+        "n": 224,
+        "events": 89,
+        "hr": 0.9548,
+        "ci_low": 0.735,
+        "ci_high": 1.2404,
+        "p": 0.729228
+      }
+    },
+    "Basal": {
+      "36mo": {
+        "label": "Basal 36mo",
+        "n": 209,
+        "events": 57,
+        "hr": 0.9758,
+        "ci_low": 0.7588,
+        "ci_high": 1.2548,
+        "p": 0.848525
+      },
+      "60mo": {
+        "label": "Basal 60mo",
+        "n": 209,
+        "events": 80,
+        "hr": 0.9519,
+        "ci_low": 0.7694,
+        "ci_high": 1.1778,
+        "p": 0.650266
+      },
+      "84mo": {
+        "label": "Basal 84mo",
+        "n": 209,
+        "events": 90,
+        "hr": 0.9075,
+        "ci_low": 0.7415,
+        "ci_high": 1.1105,
+        "p": 0.345933
+      }
+    },
+    "claudin-low": {
+      "36mo": {
+        "label": "claudin-low 36mo",
+        "n": 217,
+        "events": 26,
+        "hr": 0.9275,
+        "ci_low": 0.6444,
+        "ci_high": 1.3349,
+        "p": 0.685244
+      },
+      "60mo": {
+        "label": "claudin-low 60mo",
+        "n": 217,
+        "events": 38,
+        "hr": 0.9858,
+        "ci_low": 0.727,
+        "ci_high": 1.3366,
+        "p": 0.926461
+      },
+      "84mo": {
+        "label": "claudin-low 84mo",
+        "n": 217,
+        "events": 50,
+        "hr": 0.9951,
+        "ci_low": 0.7636,
+        "ci_high": 1.2969,
+        "p": 0.971174
+      }
+    }
+  },
+  "er_stratified_interaction": {
+    "ER+": {
+      "label": "NV × HT in ER+",
+      "n": 1498,
+      "events": 879,
+      "concordance": 0.6427,
+      "nv_zscore_hr": 1.0689,
+      "nv_zscore_ci_low": 0.905,
+      "nv_zscore_ci_high": 1.2625,
+      "nv_zscore_p": 0.432658,
+      "nv_zscore_coef": 0.0666,
+      "hormone_therapy_hr": 1.2889,
+      "hormone_therapy_ci_low": 1.0965,
+      "hormone_therapy_ci_high": 1.515,
+      "hormone_therapy_p": 0.002092,
+      "hormone_therapy_coef": 0.2538,
+      "nv_x_treatment_hr": 0.9954,
+      "nv_x_treatment_ci_low": 0.8163,
+      "nv_x_treatment_ci_high": 1.2138,
+      "nv_x_treatment_p": 0.96387,
+      "nv_x_treatment_coef": -0.0046
+    },
+    "ER-": {
+      "label": "NV × HT in ER-",
+      "n": 439,
+      "events": 246,
+      "concordance": 0.5239,
+      "nv_zscore_hr": 1.0887,
+      "nv_zscore_ci_low": 0.9531,
+      "nv_zscore_ci_high": 1.2436,
+      "nv_zscore_p": 0.210372,
+      "nv_zscore_coef": 0.085,
+      "hormone_therapy_hr": 0.8509,
+      "hormone_therapy_ci_low": 0.5539,
+      "hormone_therapy_ci_high": 1.3071,
+      "hormone_therapy_p": 0.4609,
+      "hormone_therapy_coef": -0.1615,
+      "nv_x_treatment_hr": 0.9307,
+      "nv_x_treatment_ci_low": 0.6952,
+      "nv_x_treatment_ci_high": 1.246,
+      "nv_x_treatment_p": 0.629529,
+      "nv_x_treatment_coef": -0.0718
+    }
+  },
+  "restricted_followup_interaction": {
+    "36mo": {
+      "label": "NV × HT at 36mo",
+      "n": 1979,
+      "events": 223,
+      "concordance": 0.6318,
+      "nv_zscore_hr": 0.7094,
+      "nv_zscore_ci_low": 0.6158,
+      "nv_zscore_ci_high": 0.8172,
+      "nv_zscore_p": 2e-06,
+      "nv_zscore_coef": -0.3434,
+      "hormone_therapy_hr": 0.7876,
+      "hormone_therapy_ci_low": 0.5943,
+      "hormone_therapy_ci_high": 1.0437,
+      "hormone_therapy_p": 0.096526,
+      "hormone_therapy_coef": -0.2388,
+      "nv_x_treatment_hr": 1.0545,
+      "nv_x_treatment_ci_low": 0.8397,
+      "nv_x_treatment_ci_high": 1.3242,
+      "nv_x_treatment_p": 0.648074,
+      "nv_x_treatment_coef": 0.053
+    },
+    "48mo": {
+      "label": "NV × HT at 48mo",
+      "n": 1979,
+      "events": 337,
+      "concordance": 0.621,
+      "nv_zscore_hr": 0.7244,
+      "nv_zscore_ci_low": 0.641,
+      "nv_zscore_ci_high": 0.8185,
+      "nv_zscore_p": 0.0,
+      "nv_zscore_coef": -0.3225,
+      "hormone_therapy_hr": 0.8393,
+      "hormone_therapy_ci_low": 0.6643,
+      "hormone_therapy_ci_high": 1.0604,
+      "hormone_therapy_p": 0.141962,
+      "hormone_therapy_coef": -0.1752,
+      "nv_x_treatment_hr": 1.0998,
+      "nv_x_treatment_ci_low": 0.9058,
+      "nv_x_treatment_ci_high": 1.3353,
+      "nv_x_treatment_p": 0.336919,
+      "nv_x_treatment_coef": 0.0951
+    },
+    "60mo": {
+      "label": "NV × HT at 60mo",
+      "n": 1979,
+      "events": 427,
+      "concordance": 0.6034,
+      "nv_zscore_hr": 0.7647,
+      "nv_zscore_ci_low": 0.6829,
+      "nv_zscore_ci_high": 0.8564,
+      "nv_zscore_p": 3e-06,
+      "nv_zscore_coef": -0.2682,
+      "hormone_therapy_hr": 0.8378,
+      "hormone_therapy_ci_low": 0.6804,
+      "hormone_therapy_ci_high": 1.0315,
+      "hormone_therapy_p": 0.095368,
+      "hormone_therapy_coef": -0.177,
+      "nv_x_treatment_hr": 1.1133,
+      "nv_x_treatment_ci_low": 0.9305,
+      "nv_x_treatment_ci_high": 1.3321,
+      "nv_x_treatment_p": 0.240895,
+      "nv_x_treatment_coef": 0.1074
+    },
+    "84mo": {
+      "label": "NV × HT at 84mo",
+      "n": 1979,
+      "events": 554,
+      "concordance": 0.5923,
+      "nv_zscore_hr": 0.7815,
+      "nv_zscore_ci_low": 0.7047,
+      "nv_zscore_ci_high": 0.8667,
+      "nv_zscore_p": 3e-06,
+      "nv_zscore_coef": -0.2465,
+      "hormone_therapy_hr": 0.8915,
+      "hormone_therapy_ci_low": 0.7414,
+      "hormone_therapy_ci_high": 1.0719,
+      "hormone_therapy_p": 0.221824,
+      "hormone_therapy_coef": -0.1149,
+      "nv_x_treatment_hr": 1.1234,
+      "nv_x_treatment_ci_low": 0.9567,
+      "nv_x_treatment_ci_high": 1.3192,
+      "nv_x_treatment_p": 0.15577,
+      "nv_x_treatment_coef": 0.1164
+    },
+    "120mo": {
+      "label": "NV × HT at 120mo",
+      "n": 1979,
+      "events": 760,
+      "concordance": 0.5869,
+      "nv_zscore_hr": 0.8398,
+      "nv_zscore_ci_low": 0.7633,
+      "nv_zscore_ci_high": 0.9239,
+      "nv_zscore_p": 0.000339,
+      "nv_zscore_coef": -0.1746,
+      "hormone_therapy_hr": 0.9467,
+      "hormone_therapy_ci_low": 0.8086,
+      "hormone_therapy_ci_high": 1.1083,
+      "hormone_therapy_p": 0.495481,
+      "hormone_therapy_coef": -0.0548,
+      "nv_x_treatment_hr": 1.102,
+      "nv_x_treatment_ci_low": 0.9554,
+      "nv_x_treatment_ci_high": 1.2711,
+      "nv_x_treatment_p": 0.182449,
+      "nv_x_treatment_coef": 0.0971
+    }
+  }
+}
