@@ -87,7 +87,6 @@ def load_and_merge(ssgsea_path: str, clinical_path: str) -> pd.DataFrame:
     })
 
     # Treatment binary
-    df["hormone_therapy"] = df["HORMONE_THERAPY"].map({"YES": 1, "NO": 0})
     df["chemotherapy"] = df["CHEMOTHERAPY"].map({"YES": 1, "NO": 0})
     df["radio_therapy"] = df["RADIO_THERAPY"].map({"YES": 1, "NO": 0})
 
