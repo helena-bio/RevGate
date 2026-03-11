@@ -262,44 +262,34 @@ def download_clinical_from_gdc(cancer_id, output_path):
 # ── NV Components ────────────────────────────────────────────────────────────
 
 def compute_nv_components_all_lineages():
-    """Compute NV-Score components for all unique lineages."""
-    logger.info("Computing NV components for all lineages...")
+    """Load NV-Score components from pre-computed CSV (original pipeline).
 
+    Uses /root/.revgate/cache/nv_components_all_lineages.csv which was computed
+    by the original RevGate pipeline with the correct selectivity formula.
+    Selectivity there = fraction of THIS lineage's cell lines where gene is
+    essential minus mean fraction across OTHER lineages. This is the validated
+    formula from Findings 01-10.
+    """
+    logger.info("Loading NV components from pre-computed CSV...")
+
+    csv_path = CACHE_DIR / "nv_components_all_lineages.csv"
+    if not csv_path.exists():
+        raise FileNotFoundError(f"NV components CSV not found: {csv_path}")
+
+    nv_df = pd.read_csv(csv_path)
+    logger.info(f"Loaded {len(nv_df)} lineages from {csv_path}")
+
+    # Also need top-50 genes per lineage for ssGSEA
     dep_df = pd.read_csv(DEPMAP_CHRONOS, index_col=0)
     dep_df.columns = [c.split(" (")[0] for c in dep_df.columns]
     model_df = pd.read_csv(DEPMAP_MODEL)
-
-    # gnomAD pLI
-    gnomad = pd.read_csv(GNOMAD_PATH, sep="\t", usecols=["gene", "lof_hc_lc.pLI"], low_memory=False)
-    gnomad = gnomad.dropna(subset=["lof_hc_lc.pLI"]).drop_duplicates(subset=["gene"], keep="first")
-    pli_map = dict(zip(gnomad["gene"], gnomad["lof_hc_lc.pLI"]))
-
-    # STRING degree centrality
-    try:
-        info = pd.read_csv(STRING_INFO, sep="\t")
-        string_name_map = dict(zip(info["#string_protein_id"], info["preferred_name"]))
-        edges = pd.read_csv(STRING_PATH, sep=" ")
-        edges = edges[edges["combined_score"] >= 700]
-        edges["gene1"] = edges["protein1"].map(string_name_map)
-        edges["gene2"] = edges["protein2"].map(string_name_map)
-        edges = edges.dropna(subset=["gene1", "gene2"])
-        from collections import Counter
-        degree_counter = Counter()
-        for _, row in edges.iterrows():
-            degree_counter[row["gene1"]] += 1
-            degree_counter[row["gene2"]] += 1
-        max_degree = max(degree_counter.values()) if degree_counter else 1
-        centrality_map = {g: d / max_degree for g, d in degree_counter.items()}
-        logger.info(f"STRING: {len(centrality_map)} genes with centrality")
-    except Exception as e:
-        logger.warning(f"STRING loading failed: {e} -- using empty centrality")
-        centrality_map = {}
-
     global_mean = dep_df.mean(axis=0)
-    results = {}
 
-    unique_lineages = set(CANCER_TO_LINEAGE.values())
-    for lineage in sorted(unique_lineages):
+    results = {}
+    for _, row in nv_df.iterrows():
+        lineage = row["lineage"]
+
+        # Compute top-50 genes (needed for ssGSEA)
         mask = model_df["OncotreeLineage"] == lineage
         line_ids = model_df.loc[mask, "ModelID"].tolist()
         subset = dep_df.loc[dep_df.index.intersection(line_ids)]
@@ -310,53 +300,26 @@ def compute_nv_components_all_lineages():
 
         cancer_mean = subset.mean(axis=0)
         diff_score = cancer_mean - global_mean
-        top20 = diff_score.nsmallest(20).index.tolist()
         top50 = diff_score.nsmallest(50).index.tolist()
 
-        # Gini of top-20 dependency scores
-        top20_scores = cancer_mean[top20].values
-        top20_scores_abs = np.abs(top20_scores)
-        n = len(top20_scores_abs)
-        if n > 0 and top20_scores_abs.sum() > 0:
-            sorted_scores = np.sort(top20_scores_abs)
-            index = np.arange(1, n + 1)
-            gini = (2 * np.sum(index * sorted_scores) - (n + 1) * np.sum(sorted_scores)) / (n * np.sum(sorted_scores))
-        else:
-            gini = 0.0
-
-        # Selectivity: fraction of cell lines where gene is dependency IN this lineage vs all
-        selectivity_scores = []
-        for gene in top20:
-            if gene not in dep_df.columns:
-                continue
-            cancer_dep = (subset[gene] < -0.5).mean() if gene in subset.columns else 0
-            global_dep = (dep_df[gene] < -0.5).mean()
-            sel = cancer_dep - global_dep if global_dep < cancer_dep else 0
-            selectivity_scores.append(sel)
-        selectivity = np.mean(selectivity_scores) if selectivity_scores else 0
-
-        # mean_pLI
-        pli_vals = [pli_map.get(g, np.nan) for g in top20]
-        pli_vals = [v for v in pli_vals if not np.isnan(v)]
-        mean_pli = np.mean(pli_vals) if pli_vals else 0
-
-        # mean_centrality
-        cent_vals = [centrality_map.get(g, 0) for g in top20]
-        mean_centrality = np.mean(cent_vals)
+        sel = float(row["selectivity"]) if pd.notna(row.get("selectivity")) else 0.0
+        pli = float(row["mean_pli"]) if pd.notna(row.get("mean_pli")) else 0.0
+        gini = float(row["gini"]) if pd.notna(row.get("gini")) else 0.0
+        cent = float(row["mean_centrality"]) if pd.notna(row.get("mean_centrality")) else 0.0
 
         results[lineage] = {
             "lineage": lineage,
-            "n_cell_lines": len(subset),
+            "n_cell_lines": int(row.get("n_cell_lines", 0)),
             "gini": round(gini, 4),
-            "selectivity": round(selectivity, 4),
-            "mean_pli": round(mean_pli, 4),
-            "mean_centrality": round(mean_centrality, 4),
-            "top3_genes": top20[:3],
+            "selectivity": round(sel, 4),
+            "mean_pli": round(pli, 4),
+            "mean_centrality": round(cent, 4),
+            "sel_pli": round(sel + pli, 4),
+            "top3_genes": row.get("top3_genes", "").split(", ") if isinstance(row.get("top3_genes"), str) else [],
             "top50_genes": top50,
         }
-        logger.info(f"  {lineage:<25}: Gini={gini:.3f} Sel={selectivity:.3f} "
-                     f"pLI={mean_pli:.3f} Cent={mean_centrality:.3f} "
-                     f"top3={top20[:3]}")
+
+        logger.info(f"  {lineage:<25}: Sel={sel:.3f} pLI={pli:.3f} Sel+pLI={sel+pli:.3f} top3={top50[:3]}")
 
     # MinMax scale and compute NV-Score
     lineages = list(results.keys())
@@ -372,9 +335,6 @@ def compute_nv_components_all_lineages():
         nv = 0.25 * r["gini_scaled"] + 0.25 * r["selectivity_scaled"] + \
              0.25 * r["mean_pli_scaled"] + 0.25 * r["mean_centrality_scaled"]
         r["nv_score"] = round(nv, 4)
-        r["sel_pli"] = round(r["selectivity"] + r["mean_pli"], 4)
-
-        # NV-Class
         if nv >= 0.50:
             r["nv_class"] = "NV-A"
         elif nv >= 0.35:
@@ -383,7 +343,6 @@ def compute_nv_components_all_lineages():
             r["nv_class"] = "NV-C"
 
     return results
-
 
 # ── ssGSEA per-patient ───────────────────────────────────────────────────────
 
@@ -451,7 +410,7 @@ def load_clinical_for_cox(cancer_id):
     df["patient_id"] = df[patient_col]
 
     # Age
-    age_cols = [c for c in df.columns if "age" in c.lower()]
+    age_cols = [c for c in df.columns if "age" in c.lower() and "stage" not in c.lower()]
     if age_cols:
         df["age"] = pd.to_numeric(df[age_cols[0]], errors="coerce")
     else:
@@ -527,7 +486,9 @@ def run_cox_for_cancer(cancer_id, ssgsea_scores, clinical_df, cutoffs=None):
 
 def _fit_cox(df, label, penalizer=0.01):
     """Fit univariate Cox: nv_zscore + age -> OS."""
-    cols = ["nv_zscore", "age", "os_months", "os_event"]
+    cols = ["nv_zscore", "os_months", "os_event"]
+    if "age" in df.columns and df["age"].notna().sum() > len(df) * 0.5:
+        cols.insert(1, "age")
     sub = df[cols].dropna()
     sub = sub[sub["os_months"] > 0]
 
